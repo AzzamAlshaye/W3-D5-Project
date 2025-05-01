@@ -19,119 +19,110 @@
   </head>
   <body>
     <!-- style="background-color: #4931af" -->
-    <!-- <nav class="navbar navbar-expand-lg" style="background-color: #ffffffd4">
-      <div
-        class="container-fluid d-flex align-items-center justify-content-between mx-5 m-1 gap-5"
-      >
-        <img style="height: 9vh" src="./media/logo-h.png" alt="" />
+    <!-- 2. Navbar HTML -->
+    <nav class="navbar navbar-expand-lg navbar-blur fixed-top">
+      <div class="container-fluid mx-5">
+        <!-- Logo -->
+        <a class="navbar-brand me-4" href="/">
+          <img
+            src="./media/logo-h.png"
+            alt="Tuwaiq Academy"
+            style="height: 9vh"
+          />
+        </a>
+
+        <!-- Toggler (mobile) -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-between mx-2 gap-2 bg-body-tertiary rounded-4 border"
-          id="navbarNav"
-        >
-          <div class="navbar-nav d-flex justify-content-end">
-            <button class="nav-item btn" type="button">
-              <a class="nav-link active fw-medium" aria-current="page" href="#"
-                >Home</a
-              >
-            </button>
-            <button class="nav-item btn" type="button">
-              <a
-                style="background-color: #4931af; color: white"
-                class="nav-link active fw-medium rounded-3"
-                aria-current="page"
-                href="#"
-                >About Tuwaiq Academy</a
-              >
-            </button>
-            <button class="nav-item btn" type="button">
-              <a
-                class="nav-link active fw-medium"
-                aria-current="page"
-                href="./index.html"
-                >Academies</a
-              >
-            </button>
-          </div>
-          <div
-            class="navbar-nav border border-bottom-0 border-top-0 d-flex justify-content-center px-2"
-          >
-            <button class="nav-item btn" type="button">
-              <a
-                class="nav-link active fw-medium"
-                aria-current="page"
-                href="./index.html"
-                >Test Center</a
-              >
-            </button>
-            <button class="nav-item btn" type="button">
-              <a
-                class="nav-link active fw-medium"
-                aria-current="page"
-                href="./index.html"
-                >Partners</a
-              >
-            </button>
-            <button class="nav-item btn" type="button">
-              <a
-                class="nav-link active fw-medium"
-                aria-current="page"
-                href="./index.html"
-                >Accreditations</a
-              >
-            </button>
-          </div>
-          <div class="navbar-nav">
-            <button class="nav-item btn" type="button">
-              <a
-                style="background-color: #e3d8ff; color: #4931af"
-                class="nav-link active fw-medium rounded-3"
-                aria-current="page"
-                href="./index.html"
-                >عربي</a
-              >
-            </button>
-          </div>
-        </div>
-        <button class="nav-item btn" type="button">
-          <a
-            style="background-color: #4931af; color: white"
-            class="nav-link active fw-medium p-2 rounded-4 px-3"
-            aria-current="page"
-            href="./index.html"
-            >Sign in
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="img"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-              data-icon="solar:exit-linear"
-              class="text-2xl iconify iconify--solar"
-            >
-              <g fill="none" stroke="currentColor" stroke-width="1.5">
-                <path
-                  d="M9 4.5H8c-2.357 0-3.536 0-4.268.732S3 7.143 3 9.5v5c0 2.357 0 3.535.732 4.268S5.643 19.5 8 19.5h1M9 6.476c0-2.293 0-3.44.707-4.067s1.788-.439 3.95-.062l2.33.407c2.394.417 3.591.626 4.302 1.504c.711.879.711 2.149.711 4.69v6.105c0 2.54 0 3.81-.71 4.689c-.712.878-1.91 1.087-4.304 1.505l-2.328.406c-2.162.377-3.243.565-3.95-.062S9 19.817 9 17.524z"
-                ></path>
-                <path stroke-linecap="round" d="M12 11v2"></path>
-              </g>
-            </svg>
-          </a>
-        </button>
-      </div>
-    </nav> -->
 
+        <!-- Collapsible content -->
+        <div
+          class="collapse navbar-collapse"
+          id="mainNav"
+          style="border: rgb(192, 199, 255) 2px solid"
+        >
+          <div
+            class="d-flex flex-column flex-md-row collapse navbar-collapse justify-content-center gap-3"
+            style="border: rgb(98, 255, 0) 2px solid"
+          >
+            <!-- Left + middle nav links -->
+            <ul
+              class="navbar-nav align-items-center gap-4"
+              style="border: rgb(255, 0, 43) 2px solid"
+            >
+              <li class="nav-item">
+                <a class="nav-link active fw-medium" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium" href="#">About Tuwaiq Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium" href="#">Academies</a>
+              </li>
+            </ul>
+
+            <!-- divider -->
+            <div class="nav-divider d-none d-lg-block"></div>
+
+            <!-- more nav links -->
+            <ul
+              class="navbar-nav align-items-center gap-4"
+              style="border: pink 2px solid"
+            >
+              <!-- remove this border -->
+              <li class="nav-item">
+                <a class="nav-link fw-medium" href="#">Test Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-medium" href="#">Accreditations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lang-pill fw-medium" href="#">عربي</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- push the next items to the right -->
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link signin-pill fw-medium d-flex align-items-center"
+                href="#"
+              >
+                Sign In
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="ms-2"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path
+                      d="M9 4.5H8c-2.357 0-3.536 0-4.268.732S3 7.143 3 9.5v5c0 2.357 0 3.535.732 4.268S5.643 19.5 8 19.5h1M9 6.476c0-2.293 0-3.44.707-4.067s1.788-.439 3.95-.062l2.33.407c2.394.417 3.591.626 4.302 1.504.711.879.711 2.149.711 4.69v6.105c0 2.54 0 3.81-.71 4.689-.712.878-1.91 1.087-4.304 1.505l-2.328.406c-2.162.377-3.243.565-3.95-.062S9 19.817 9 17.524z"
+                    />
+                    <path stroke-linecap="round" d="M12 11v2" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- 2. Bootstrap-powered markup -->
     <div>
       <!-- outer wrapper: toggle bg class via Alpine -->

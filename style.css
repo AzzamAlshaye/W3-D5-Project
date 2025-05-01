@@ -1,7 +1,38 @@
-* {
-}
 body {
   font-family: IBM Plex Sans Arabic !important;
+}
+
+/* Navbar backdrop blur */
+.navbar-blur {
+  background-color: rgba(255, 255, 255, 0.6) !important; /* fallback */
+  backdrop-filter: blur(10px);
+}
+/* Active link pill */
+.navbar .nav-link.active {
+  background-color: #4931af;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+/* Divider between groups */
+.nav-divider {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  height: 2rem;
+  margin: 0 1rem;
+}
+/* Language switch pill */
+.lang-pill {
+  background-color: #e3d8ff;
+  color: #4931af !important;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+}
+/* Sign-in button pill */
+.signin-pill {
+  background-color: #4931af;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 /* make nav-links a bit more padded */
