@@ -3,14 +3,396 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuwaiq Academy Navbar</title>
+
+    <!-- Bootstrap CSS -->
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.tuwaiq.edu.sa/landing/images/logo/favicon.ico"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
     />
-    <title>Document</title>
+    <!-- Bootstrap Icons (for the Sign In icon) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <p>test</p>
+    <!-- style="background-color: #4931af" -->
+    <!-- <nav class="navbar navbar-expand-lg" style="background-color: #ffffffd4">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between mx-5 m-1 gap-5"
+      >
+        <img style="height: 9vh" src="./media/logo-h.png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-between mx-2 gap-2 bg-body-tertiary rounded-4 border"
+          id="navbarNav"
+        >
+          <div class="navbar-nav d-flex justify-content-end">
+            <button class="nav-item btn" type="button">
+              <a class="nav-link active fw-medium" aria-current="page" href="#"
+                >Home</a
+              >
+            </button>
+            <button class="nav-item btn" type="button">
+              <a
+                style="background-color: #4931af; color: white"
+                class="nav-link active fw-medium rounded-3"
+                aria-current="page"
+                href="#"
+                >About Tuwaiq Academy</a
+              >
+            </button>
+            <button class="nav-item btn" type="button">
+              <a
+                class="nav-link active fw-medium"
+                aria-current="page"
+                href="./index.html"
+                >Academies</a
+              >
+            </button>
+          </div>
+          <div
+            class="navbar-nav border border-bottom-0 border-top-0 d-flex justify-content-center px-2"
+          >
+            <button class="nav-item btn" type="button">
+              <a
+                class="nav-link active fw-medium"
+                aria-current="page"
+                href="./index.html"
+                >Test Center</a
+              >
+            </button>
+            <button class="nav-item btn" type="button">
+              <a
+                class="nav-link active fw-medium"
+                aria-current="page"
+                href="./index.html"
+                >Partners</a
+              >
+            </button>
+            <button class="nav-item btn" type="button">
+              <a
+                class="nav-link active fw-medium"
+                aria-current="page"
+                href="./index.html"
+                >Accreditations</a
+              >
+            </button>
+          </div>
+          <div class="navbar-nav">
+            <button class="nav-item btn" type="button">
+              <a
+                style="background-color: #e3d8ff; color: #4931af"
+                class="nav-link active fw-medium rounded-3"
+                aria-current="page"
+                href="./index.html"
+                >عربي</a
+              >
+            </button>
+          </div>
+        </div>
+        <button class="nav-item btn" type="button">
+          <a
+            style="background-color: #4931af; color: white"
+            class="nav-link active fw-medium p-2 rounded-4 px-3"
+            aria-current="page"
+            href="./index.html"
+            >Sign in
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              data-icon="solar:exit-linear"
+              class="text-2xl iconify iconify--solar"
+            >
+              <g fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M9 4.5H8c-2.357 0-3.536 0-4.268.732S3 7.143 3 9.5v5c0 2.357 0 3.535.732 4.268S5.643 19.5 8 19.5h1M9 6.476c0-2.293 0-3.44.707-4.067s1.788-.439 3.95-.062l2.33.407c2.394.417 3.591.626 4.302 1.504c.711.879.711 2.149.711 4.69v6.105c0 2.54 0 3.81-.71 4.689c-.712.878-1.91 1.087-4.304 1.505l-2.328.406c-2.162.377-3.243.565-3.95-.062S9 19.817 9 17.524z"
+                ></path>
+                <path stroke-linecap="round" d="M12 11v2"></path>
+              </g>
+            </svg>
+          </a>
+        </button>
+      </div>
+    </nav> -->
+
+    <!-- Offcanvas (mobile) -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Tuwaiq Academy</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Academies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Test Center</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accreditations</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary w-100 mt-4">
+          Sign In <i class="bi bi-box-arrow-in-right ms-1"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div
+      class="container-lg py-4 text-center text-sm-start rounded-5"
+      style="background-color: #e3d8ff"
+    >
+      <!-- Top: logo + links -->
+      <div class="row align-items-start justify-content-between">
+        <div class="col-md-auto mb-3 mb-md-0">
+          <a
+            href="/?page=%2F"
+            class="d-inline-flex align-items-center justify-content-center justify-content-sm-start"
+          >
+            <img
+              src="https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h.png"
+              alt="Tuwaiq"
+              style="height: 80px"
+            />
+          </a>
+        </div>
+        <div class="col-md">
+          <div class="row row-cols-2 gx-4 gy-3">
+            <!-- Column 1 -->
+            <div class="col">
+              <ul
+                class="list-unstyled mb-0"
+                :class="{'text-purple-alt': theme === 'founding_day'}"
+              >
+                <li class="mb-2">
+                  <a
+                    href="https://tuwaiq.edu.sa/form/YxdJKJwy"
+                    class="text-purple text-decoration-none"
+                  >
+                    Join us as trainer
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" class="text-purple text-decoration-none">
+                    About Tuwaiq Academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Column 2 -->
+            <div class="col">
+              <ul
+                class="list-unstyled mb-0"
+                :class="{'text-purple-alt': theme === 'founding_day'}"
+              >
+                <li class="mb-2">
+                  <a href="/privacy" class="text-purple text-decoration-none">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="/terms" class="text-purple text-decoration-none">
+                    Terms and Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <!-- Bottom: copyright + social icons -->
+      <div class="row align-items-center">
+        <div
+          class="col-md order-2 order-md-1 mt-3 mt-md-0 text-center text-md-start"
+          :class="{'text-purple-alt': theme === 'founding_day'}"
+        >
+          <small class="text-purple">
+            © 2024
+            <a href="https://tuwaiq.edu.sa/" class="text-decoration-none"
+              >Tuwaiq Academy</a
+            >. All Rights Reserved.
+          </small>
+        </div>
+        <div
+          class="col-md-auto d-flex justify-content-center justify-content-md-end order-1 order-md-2"
+        >
+          <!-- Repeat this <a> for each icon -->
+          <a
+            href="https://www.linkedin.com/company/tuwaiqacademy"
+            class="d-inline-block"
+          >
+            <svg
+              class="w-11 h-9 bg-[#4f29b7] hover:bg-[#8869dd] rounded-full p-2"
+              :class="{'bg-[#684F46] hover:bg-[#684F46]/80': theme === 'founding_day'}"
+              xmlns="http://www.w3.org/2000/svg"
+              height="14"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+              ></path>
+            </svg>
+          </a>
+
+          <!-- Snapchat -->
+          <a
+            href="https://www.snapchat.com/add/tuwaiqacademy"
+            class="d-inline-flex align-items-center justify-content-center rounded-circle me-2 bg-purple text-white p-2"
+            :class="{'bg-purple-alt': theme === 'founding_day'}"
+            style="width: 36px; height: 36px"
+          >
+            <!-- Snapchat SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="16"
+              height="16"
+            >
+              <path
+                fill="currentColor"
+                d="M496.9 366.6c-3.4-9.2-9.8-14.1-17.1-18.2-1.4-.8-2.6-
+                     1.5-3.7-1.9-2.2-1.1-4.4-2.2-6.6-3.4-22.8-12.1-40.6-
+                     27.3-53-45.4a102.9 102.9 0 0 1 -9.1-16.1c-1.1-3-1-4.7-.2-
+                     6.3a10.2 10.2 0 0 1 2.9-3c3.9-2.6 8-5.2 10.7-7 4.9-3.2 
+                     8.8-5.7 11.2-7.4 9.4-6.5 15.9-13.5 20-21.3a42.4 
+                     42.4 0 0 0 2.1-35.2c-6.2-16.3-21.6-26.4-40.3-26.4a55.5 
+                     55.5 0 0 0 -11.7 1.2c-1 .2-2.1 .5-3.1 .7 .2-11.2-.1-22.9-
+                     1.1-34.5-3.5-40.8-17.8-62.1-32.7-79.2A130.2 130.2 0 
+                     0 0 332.1 36.4C309.5 23.5 283.9 17 256 17S202.6 23.5 
+                     180 36.4a129.7 129.7 0 0 0 -33.3 26.8c-14.9 17-29.2 
+                     38.4-32.7 79.2-1 11.6-1.2 23.4-1.1 34.5-1-.3-2-.5-
+                     3.1-.7a55.5 55.5 0 0 0 -11.7-1.2c-18.7 0-34.1 10.1-
+                     40.3 26.4a42.4 42.4 0 0 0 2 35.2c4.1 7.8 10.7 14.7 
+                     20 21.3 2.5 1.7 6.4 4.2 11.2 7.4 2.6 1.7 6.5 4.2 
+                     10.3 6.7a11.1 11.1 0 0 1 3.3 3.3c.8 1.6 .8 3.4-.4 
+                     6.6a102 102 0 0 1 -8.9 15.8c-12.1 17.7-29.4 32.6-
+                     51.4 44.6C32.4 348.6 20.2 352.8 15.1 366.7c-3.9 
+                     10.5-1.3 22.5 8.5 32.6a49.1 49.1 0 0 0 12.4 9.4 
+                     134.3 134.3 0 0 0 30.3 12.1"
+              />
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a
+            href="https://www.youtube.com/channel/UC_pOwgeaVK7bg3z7fJB5N8w"
+            class="d-inline-flex align-items-center justify-content-center rounded-circle me-2 bg-purple text-white p-2"
+            :class="{'bg-purple-alt': theme === 'founding_day'}"
+            style="width: 36px; height: 36px"
+          >
+            <!-- YouTube SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="16"
+              height="16"
+            >
+              <path
+                fill="currentColor"
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 
+                     64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 
+                     24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 
+                     89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 
+                     448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 
+                     42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-
+                     132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 
+                     81.2-142.7 81.2z"
+              />
+            </svg>
+          </a>
+          <!-- Twitter -->
+          <a
+            href="https://twitter.com/TuwaiqAcademy"
+            class="d-inline-flex align-items-center justify-content-center rounded-circle me-2 bg-purple text-white p-2"
+            :class="{'bg-purple-alt': theme === 'founding_day'}"
+            style="width: 36px; height: 36px"
+          >
+            <!-- Twitter SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="16"
+              height="16"
+            >
+              <path
+                fill="currentColor"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 
+                     106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 
+                     180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.
+                     4 421.8z"
+              />
+            </svg>
+          </a>
+          <!-- Discord -->
+          <a
+            href="https://discord.gg/DWpUH7wFxj"
+            class="d-inline-flex align-items-center justify-content-center rounded-circle bg-purple text-white p-2"
+            :class="{'bg-purple-alt': theme === 'founding_day'}"
+            style="width: 36px; height: 36px"
+          >
+            <!-- Discord SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 21 16"
+              width="16"
+              height="16"
+            >
+              <path
+                fill="currentColor"
+                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 
+                     0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 
+                     11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 
+                     1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 
+                     0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 
+                     10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.
+                     664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33
+                     -.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 
+                     1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 
+                     0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-
+                     1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 
+                     1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.
+                     94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.
+                     047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-
+                     1.8 2.045Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

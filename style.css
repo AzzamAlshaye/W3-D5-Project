@@ -1,2 +1,42 @@
 * {
 }
+body {
+  font-family: IBM Plex Sans Arabic !important;
+}
+
+/* make nav-links a bit more padded */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  color: #444;
+}
+/* active “Home” pill */
+.navbar-nav .nav-link.active {
+  background-color: #6f42c1;
+  color: #fff !important;
+  border-radius: 0.5rem;
+}
+/* language toggle */
+.btn-language {
+  background-color: #fff;
+  color: #6f42c1;
+  border: 1px solid #6f42c1;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+/* offcanvas active item bold */
+.offcanvas-body .nav-link.active {
+  font-weight: bold;
+}
+
+.text-purple {
+  color: #4f29b7 !important;
+}
+.text-purple-alt {
+  color: #684f46 !important;
+}
+.bg-purple {
+  background-color: #4f29b7 !important;
+}
+.bg-purple-alt {
+  background-color: #684f46 !important;
+}
