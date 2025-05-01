@@ -40,3 +40,50 @@ body {
 .bg-purple-alt {
   background-color: #684f46 !important;
 }
+
+/* footer */
+/* background colours */
+.bg-tuwaiq {
+  background-color: #e3d8ff !important;
+}
+.bg-founding {
+  background-color: #e8dfd0 !important;
+}
+/* text colours */
+.text-tuwaiq {
+  color: #4c4bcf !important;
+}
+.text-founding {
+  color: #684f46 !important;
+}
+/* grayscale filter */
+.grayscale {
+  filter: grayscale(100%);
+}
+/* hr custom border */
+.border-custom {
+  border-color: #ffffff !important;
+}
+/* size for the round icons */
+.social-icon {
+  width: 44px;
+  height: 36px;
+}
+/* hover states for social icons */
+.bg-tuwaiq:hover {
+  background-color: #8869dd !important;
+}
+.bg-founding:hover {
+  background-color: rgba(104, 79, 70, 0.8) !important;
+}
+
+/* make the circle twice as big */
+.social-icon {
+  width: 60px;
+  height: 30px;
+}
+/* make the SVG itself twice as big */
+.social-icon svg {
+  width: 20px; /* was ~20px */
+  height: 20px; /* was ~20px */
+}
