@@ -1,5 +1,6 @@
 body {
   font-family: IBM Plex Sans Arabic !important;
+  padding-top: 100px;
 }
 
 /* Navbar backdrop blur */
@@ -72,6 +73,55 @@ body {
 .bg-purple-alt {
   background-color: #684f46 !important;
 }
+
+.text-brown {
+  color: #684f46 !important;
+}
+.bg-beige {
+  background-color: #e8dfd0 !important;
+}
+.shadow-offset {
+  box-shadow: 5px 5px #4f29b7 !important;
+}
+.shadow-brown {
+  box-shadow: 5px 5px #684f46 !important;
+}
+
+/* page1-hero */
+.min-h-30rem {
+  min-height: 30rem;
+}
+.bg-purple-light {
+  background-color: #e7ddff;
+}
+.bg-teal-light {
+  background-color: #bffffa;
+}
+.bg-pink-light {
+  background-color: #ffdde1;
+}
+.text-purple {
+  color: #4f29b7;
+}
+.text-brown {
+  color: #684f46;
+}
+.shadow-offset {
+  box-shadow: 5px 5px #4f29b7;
+}
+.shadow-brown {
+  box-shadow: 5px 5px #684f46;
+}
+.rotate-3 {
+  transform: rotate(3deg);
+}
+.rotate-neg-3 {
+  transform: rotate(-3deg);
+}
+.translate-up {
+  transform: translateY(-1rem);
+}
+/* page1-hero */
 
 /* footer */
 /* background colours */
