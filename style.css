@@ -1,6 +1,7 @@
 body {
   font-family: IBM Plex Sans Arabic !important;
   padding-top: 100px;
+  width: 100%;
 }
 
 /* Navbar backdrop blur */
@@ -95,15 +96,11 @@ body {
 .text-purple {
   color: #4f29b7;
 }
-.text-brown {
-  color: #684f46;
-}
+
 .shadow-offset {
   box-shadow: 5px 5px #4f29b7;
 }
-.shadow-brown {
-  box-shadow: 5px 5px #684f46;
-}
+
 .rotate-3 {
   transform: rotate(3deg);
 }
@@ -112,6 +109,24 @@ body {
 }
 .translate-up {
   transform: translateY(-1rem);
+}
+.card-bootcamps {
+  background-color: #bed9ff;
+}
+.card-programs {
+  background-color: #ffe7ef;
+}
+.card-talks {
+  background-color: #d3ffd5;
+}
+.rounded-3xl {
+  border-radius: 1.5rem !important;
+}
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.1) !important;
 }
 /* page1-hero */
 
