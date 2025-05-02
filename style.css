@@ -158,6 +158,43 @@ body {
     transform: translateX(-25%);
   }
 }
+/* Badge in top-right of card */
+.badge-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+/* Decorative bar under cards */
+.decor-bar {
+  height: 8px;
+  background-color: rgba(218, 42, 243, 0.2);
+  border-radius: 4px;
+}
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(90deg, #da2af3 0%, #f8587e 100%);
+  color: #fff;
+}
+.btn-gradient:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+/* ensure each card is same height */
+.stats-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* push the image to the bottom of the card */
+.stats-card .img-container {
+  margin-top: auto;
+  text-align: center;
+}
+/* small rounded corners on images */
+.stats-card .img-container img {
+  max-height: 120px;
+  object-fit: contain;
+}
 
 /* footer */
 
