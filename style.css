@@ -123,6 +123,35 @@ body {
 }
 /* page1-hero */
 
+/* slideshow */
+/* your custom teal background */
+.bg-custom-teal {
+  background-color: #57e3d8 !important;
+}
+
+/* marquee animation for the logos */
+.logos-slide {
+  display: flex;
+  overflow: hidden;
+  animation: slide-left 10s linear infinite;
+  :hover {
+    animation: slide-left 0s linear infinite;
+  }
+}
+
+.logos-slide img {
+  height: 20px;
+  margin: 0 0.75rem;
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
 /* footer */
 /* background colours */
 .bg-tuwaiq {

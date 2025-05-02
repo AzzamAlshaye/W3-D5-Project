@@ -135,12 +135,10 @@
             class="card h-100 border-0 bg-purple-light rounded-3 overflow-hidden position-relative"
           >
             <div class="card-body position-relative">
-              <!-- Alpine.js theme images -->
-
               <img
                 src="./media/page-1/Tuwaiq_mounten.png"
-                class="position-absolute"
-                style="width: 83%; bottom: -2rem; right: -8rem"
+                class="position-absolute z-1"
+                style="width: 83%; height: 100%; bottom: -1rem; right: -16rem"
               />
 
               <!-- Headings -->
@@ -179,18 +177,90 @@
               </button>
 
               <!-- Logos carousel -->
+              <!-- Mobile-only: absolute + teal bg -->
               <div
-                class="d-flex position-absolute bottom-0 start-0 end-0 p-3"
-                style="background-color: #57e3d8"
+                class="position-absolute bottom-0 start-0 end-0 mb-5 m- bg-custom-teal d-block d-md-none"
               >
-                <div class="d-flex flex-wrap justify-content-center gap-2">
+                <div class="logos-slide">
+                  <!-- your images… -->
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
                   <img
-                    src="./media/page-1/apple"
-                    class="img-fluid"
-                    alt="Apple"
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
                   />
-                  <img src="/img/Brands/aws.png" class="img-fluid" alt="AWS" />
-                  <!-- repeat for all logos... -->
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+
+                  <!-- …etc… -->
+                </div>
+              </div>
+
+              <!-- Desktop-only: relative + transparent bg -->
+              <div
+                class="position-relative d-none d-md-block"
+                style="bottom: -6rem"
+              >
+                <div class="logos-slide">
+                  <!-- same set of images here -->
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+
+                  <!-- repeat again for seamless loop -->
                 </div>
               </div>
             </div>
