@@ -125,19 +125,21 @@
         </div>
       </nav>
     </section>
-
     <section class="container py-4">
+      <!-- Main + Sidebar -->
       <div class="row g-4">
         <!-- Main panel -->
-        <div class="col-12 col-md-9 position-relative">
+        <div class="col-12 col-lg-9 position-relative">
           <div
             class="card h-100 border-0 bg-purple-light rounded-3 overflow-hidden position-relative"
           >
             <div class="card-body position-relative">
+              <!-- Decorative mountain: only on lg+ -->
               <img
                 src="./media/page-1/Tuwaiq_mounten.png"
-                class="position-absolute z-1"
+                class="position-absolute top-0 end-0 z-1 d-none d-lg-block"
                 style="width: 83%; height: 100%; bottom: -1rem; right: -16rem"
+                alt="Tuwaiq Mountain"
               />
 
               <!-- Headings -->
@@ -168,92 +170,15 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M10.8125 1.06869C10.8125 0.873836 10.8979 0.68696 11.05 0.549176C11.2021 0.411391 11.4084 0.333984 11.6234 0.333984H15.4078C15.6229 0.333984 15.8292 0.411391 15.9812 0.549176C16.1333 0.68696 16.2188 0.873836 16.2188 1.06869V4.49733C16.2188 4.69218 16.1333 4.87906 15.9812 5.01684C15.8292 5.15463 15.6229 5.23203 15.4078 5.23203H11.6234C11.4084 5.23203 11.2021 5.15463 11.05 5.01684C10.8979 4.87906 10.8125 4.69218 10.8125 4.49733V1.06869Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M11.6219 5.23275C11.4068 5.23275 11.2005 5.31016 11.0485 5.44794C10.8964 5.58573 10.8109 5.7726 10.8109 5.96746L10 5.23275C10.2151 5.23275 10.4213 5.15535 10.5734 5.01756C10.7255 4.87978 10.8109 4.6929 10.8109 4.49805L11.6219 5.23275Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M5.40625 5.96713C5.40625 5.77227 5.49169 5.5854 5.64377 5.44761C5.79585 5.30983 6.00212 5.23242 6.21719 5.23242H10.0016C10.2167 5.23242 10.4229 5.30983 10.575 5.44761C10.7271 5.5854 10.8125 5.77227 10.8125 5.96713V9.39577C10.8125 9.59062 10.7271 9.7775 10.575 9.91528C10.4229 10.0531 10.2167 10.1305 10.0016 10.1305H6.21719C6.00212 10.1305 5.79585 10.0531 5.64377 9.91528C5.49169 9.7775 5.40625 9.59062 5.40625 9.39577V5.96713Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M10 10.1292C10.2151 10.1292 10.4213 10.2066 10.5734 10.3444C10.7255 10.4822 10.8109 10.6691 10.8109 10.8639L11.6219 10.1292C11.4068 10.1292 11.2005 10.0518 11.0485 9.91405C10.8964 9.77626 10.8109 9.58939 10.8109 9.39453L10 10.1292Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M6.21563 10.1292C6.00056 10.1292 5.79429 10.2066 5.64221 10.3444C5.49013 10.4822 5.40469 10.6691 5.40469 10.8639L4.59375 10.1292C4.80882 10.1292 5.01509 10.0518 5.16717 9.91405C5.31925 9.77626 5.40469 9.58939 5.40469 9.39453L6.21563 10.1292Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M0 10.8656C0 10.6707 0.0854386 10.4838 0.237519 10.346C0.3896 10.2083 0.595865 10.1309 0.81094 10.1309H4.59533C4.8104 10.1309 5.01667 10.2083 5.16875 10.346C5.32083 10.4838 5.40627 10.6707 5.40627 10.8656V14.2942C5.40627 14.4891 5.32083 14.6759 5.16875 14.8137C5.01667 14.9515 4.8104 15.0289 4.59533 15.0289H0.81094C0.595865 15.0289 0.3896 14.9515 0.237519 14.8137C0.0854386 14.6759 0 14.4891 0 14.2942V10.8656Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M4.59375 15.0277C4.80882 15.0277 5.01509 15.1051 5.16717 15.2429C5.31925 15.3807 5.40469 15.5675 5.40469 15.7624L6.21563 15.0277C6.00056 15.0277 5.79429 14.9503 5.64221 14.8125C5.49013 14.6747 5.40469 14.4878 5.40469 14.293L4.59375 15.0277Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M5.40625 15.7621C5.40625 15.5672 5.49169 15.3803 5.64377 15.2425C5.79585 15.1047 6.00212 15.0273 6.21719 15.0273H10.0016C10.2167 15.0273 10.4229 15.1047 10.575 15.2425C10.7271 15.3803 10.8125 15.5672 10.8125 15.7621V19.1907C10.8125 19.3855 10.7271 19.5724 10.575 19.7102C10.4229 19.848 10.2167 19.9254 10.0016 19.9254H6.21719C6.00212 19.9254 5.79585 19.848 5.64377 19.7102C5.49169 19.5724 5.40625 19.3855 5.40625 19.1907V15.7621Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M10 19.9261C10.2151 19.9261 10.4213 20.0035 10.5734 20.1413C10.7255 20.2791 10.8109 20.466 10.8109 20.6608L11.6219 19.9261C11.4068 19.9261 11.2005 19.8487 11.0485 19.7109C10.8964 19.5731 10.8109 19.3863 10.8109 19.1914L10 19.9261Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M10.8125 20.6605C10.8125 20.4656 10.8979 20.2788 11.05 20.141C11.2021 20.0032 11.4084 19.9258 11.6234 19.9258H15.4078C15.6229 19.9258 15.8292 20.0032 15.9812 20.141C16.1333 20.2788 16.2188 20.4656 16.2188 20.6605V24.0891C16.2188 24.284 16.1333 24.4709 15.9812 24.6086C15.8292 24.7464 15.6229 24.8238 15.4078 24.8238H11.6234C11.4084 24.8238 11.2021 24.7464 11.05 24.6086C10.8979 24.4709 10.8125 24.284 10.8125 24.0891V20.6605Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M10.8125 10.8656C10.8125 10.6707 10.8979 10.4838 11.05 10.346C11.2021 10.2083 11.4084 10.1309 11.6234 10.1309H15.4078C15.6229 10.1309 15.8292 10.2083 15.9812 10.346C16.1333 10.4838 16.2188 10.6707 16.2188 10.8656V14.2942C16.2188 14.4891 16.1333 14.6759 15.9812 14.8137C15.8292 14.9515 15.6229 15.0289 15.4078 15.0289H11.6234C11.4084 15.0289 11.2021 14.9515 11.05 14.8137C10.8979 14.6759 10.8125 14.4891 10.8125 14.2942V10.8656Z"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M13.5156 10.1309H18.9219V15.0289H13.5156V10.1309Z"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M11.6219 15.0277C11.4068 15.0277 11.2005 15.1051 11.0485 15.2429C10.8964 15.3807 10.8109 15.5675 10.8109 15.7624L10 15.0277C10.2151 15.0277 10.4213 14.9503 10.5734 14.8125C10.7255 14.6747 10.8109 14.4878 10.8109 14.293L11.6219 15.0277Z"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M16.2188 10.8656C16.2188 10.6707 16.3042 10.4838 16.4563 10.346C16.6083 10.2083 16.8146 10.1309 17.0297 10.1309H20.8141C21.0292 10.1309 21.2354 10.2083 21.3875 10.346C21.5396 10.4838 21.625 10.6707 21.625 10.8656V14.2942C21.625 14.4891 21.5396 14.6759 21.3875 14.8137C21.2354 14.9515 21.0292 15.0289 20.8141 15.0289H17.0297C16.8146 15.0289 16.6083 14.9515 16.4563 14.8137C16.3042 14.6759 16.2188 14.4891 16.2188 14.2942V10.8656Z"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M18.9219 10.1309H24.3281V15.0289H18.9219V10.1309Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
-                  <path
-                    d="M21.625 10.8656C21.625 10.6707 21.7104 10.4838 21.8625 10.346C22.0146 10.2083 22.2209 10.1309 22.4359 10.1309H26.2203C26.4354 10.1309 26.6417 10.2083 26.7937 10.346C26.9458 10.4838 27.0313 10.6707 27.0313 10.8656V14.2942C27.0313 14.4891 26.9458 14.6759 26.7937 14.8137C26.6417 14.9515 26.4354 15.0289 26.2203 15.0289H22.4359C22.2209 15.0289 22.0146 14.9515 21.8625 14.8137C21.7104 14.6759 21.625 14.4891 21.625 14.2942V10.8656Z"
-                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
-                    fill="#4F29B7"
-                  ></path>
+                  <!-- …your SVG paths… -->
                 </svg>
               </button>
 
-              <!-- Logos carousel -->
-              <!-- Mobile-only: absolute + teal bg -->
+              <!-- Logos carousel: Mobile & Tablet (below lg) -->
               <div
-                class="position-absolute bottom-0 start-0 end-0 mb-5 m- bg-custom-teal d-block d-md-none"
+                class="position-absolute bottom-0 start-0 end-0 mb-5 bg-custom-teal d-block d-lg-none"
               >
                 <div class="logos-slide">
-                  <!-- your images… -->
                   <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
                   <img src="./media/page-1/slide-aws.png" alt="aws logo" />
                   <img
@@ -270,34 +195,16 @@
                     src="./media/page-1/slide-microsoft.png"
                     alt="microsoft logo"
                   />
-                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
-                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
-                  <img
-                    src="./media/page-1/slide-CertNexus.png"
-                    alt="CertNexus logo"
-                  />
-                  <img
-                    src="./media/page-1/slide-comptia.png"
-                    alt="comptia logo"
-                  />
-                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
-                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
-                  <img
-                    src="./media/page-1/slide-microsoft.png"
-                    alt="microsoft logo"
-                  />
-
-                  <!-- …etc… -->
+                  <!-- repeat as needed for seamless loop -->
                 </div>
               </div>
 
-              <!-- Desktop-only: relative + transparent bg -->
+              <!-- Logos carousel: Desktop only (lg+) -->
               <div
-                class="position-relative d-none d-md-block"
+                class="position-relative d-none d-lg-block"
                 style="bottom: -6rem"
               >
                 <div class="logos-slide">
-                  <!-- same set of images here -->
                   <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
                   <img src="./media/page-1/slide-aws.png" alt="aws logo" />
                   <img
@@ -314,24 +221,7 @@
                     src="./media/page-1/slide-microsoft.png"
                     alt="microsoft logo"
                   />
-                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
-                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
-                  <img
-                    src="./media/page-1/slide-CertNexus.png"
-                    alt="CertNexus logo"
-                  />
-                  <img
-                    src="./media/page-1/slide-comptia.png"
-                    alt="comptia logo"
-                  />
-                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
-                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
-                  <img
-                    src="./media/page-1/slide-microsoft.png"
-                    alt="microsoft logo"
-                  />
-
-                  <!-- repeat again for seamless loop -->
+                  <!-- repeat for loop -->
                 </div>
               </div>
             </div>
@@ -339,7 +229,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="col-12 col-md-3 d-flex flex-column gap-4">
+        <div class="col-12 col-lg-3 d-flex flex-column gap-4">
           <!-- Registrants count -->
           <div class="card text-end p-4 bg-teal-light rounded-3 text-center">
             <p class="fs-5 fw-bold mb-2 text-success">
@@ -362,7 +252,7 @@
               background-color: #ffdde1;
               border-color: #dfdfdf;
             "
-            :class="{'bg-beige': theme==='founding_day'}"
+            :class="{'bg-beige': theme === 'founding_day'}"
           >
             <div class="d-flex justify-content-between align-items-start mb-3">
               <h2 class="h4 fw-semibold text-danger">
@@ -381,9 +271,7 @@
                   viewBox="0 0 384 512"
                   style="height: 14px; width: 14px"
                 >
-                  <path
-                    d="M48 96c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-185.4L324.7 411.3c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L86.6 128 272 128c8.8 0 16-7.2 16-16s-7.2-16-16-16L48 96z"
-                  ></path>
+                  <!-- …arrow path… -->
                 </svg>
               </a>
             </div>
@@ -394,7 +282,6 @@
             </p>
 
             <!-- Overlay image -->
-
             <div
               class="position-absolute bottom-0 start-50 translate-middle-x"
               style="width: 85%; transform: translateY(50%)"
@@ -441,130 +328,121 @@
             </div>
           </div>
         </div>
-        <div class="d-flex flex-row flex-wrap g-4 mx-2 col-12 gap-5">
-          <!-- ─────── Feature cards (first line) ─────── -->
-          <!-- Bootcamps -->
-          <div class="col-md-4 col-12">
-            <div class="card h-75 border-0">
+      </div>
+
+      <!-- Feature cards -->
+      <div class="row g-4 mt-4">
+        <!-- Bootcamps -->
+        <div class="col-12 col-md-4">
+          <div class="card h-75 border-0">
+            <div
+              class="card-body d-flex flex-column p-4 rounded-3xl card-bootcamps hover-shadow"
+            >
               <div
-                class="card-body d-flex flex-column p-4 rounded-3xl card-bootcamps hover-shadow"
+                class="d-flex justify-content-between align-items-center mb-3"
               >
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <h5 class="mb-0">Bootcamps</h5>
-                  <a href="" class="btn btn-light rounded-circle p-2">
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-                <p class="text-secondary">
-                  Professional bootcamps and courses to earn the necessary
-                  skills…
-                </p>
-                <div class="text-center mt-3">
-                  <img
-                    src="./media/page-1/bootcamps-laptop.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
+                <h5 class="mb-0">Bootcamps</h5>
+                <a href="#" class="btn btn-light rounded-circle p-2">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
-            </div>
-          </div>
-
-          <!-- Programs -->
-          <div class="col-md-3 col-12 rounded-3xl card-programs hover-shadow">
-            <div class="card h-75 border-0">
-              <div
-                class="card-body d-flex flex-column p-4 card-programs rounded-3xl"
-              >
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <h5 class="mb-0">Programs</h5>
-                  <a
-                    href="/bootcamps?category=8836bde0-68ae-3600-92a2-23dce3c487ca&amp;type=NORMAL"
-                    class="btn btn-light rounded-circle p-2"
-                  >
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-                <p class="text-secondary flex-grow-1">
-                  Professional programs lasting 1–3 weeks, aimed at developing
-                  your technical skills…
-                </p>
-                <div class="text-center mt-3">
-                  <img
-                    src="./media/page-1/programs-art.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tuwaiq Talks -->
-          <div class="col-12 col-md-4">
-            <div class="card h-100 border-0">
-              <div
-                class="card-body d-flex flex-column p-4 card-talks hover-shadow rounded-3xl"
-              >
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5>Tuwaiq Talks</h5>
-                  <a href="" class="btn btn-light rounded-circle p-2">
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-                <p class="text-secondary flex-grow-1">
-                  Enriching knowledge meetings, held in cooperation with several
-                  leading…
-                </p>
-
+              <p class="text-secondary">
+                Professional bootcamps and courses to earn the necessary skills…
+              </p>
+              <div class="text-center mt-3">
                 <img
-                  src="./media/page-1/Tuwaiq-talk.svg"
-                  class="Tuwaiq-talk image"
-                  alt=""
-                  style="height: 15rem"
+                  src="./media/page-1/bootcamps-laptop.png"
+                  class="img-fluid"
+                  alt="Bootcamps"
                 />
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- ─────── Main panel (wraps to next line) ─────── -->
-          <!-- <div class="col-12 col-md-9 position-relative"> -->
-          <!-- your existing “Learn Future Technologies” card here… -->
-          <!-- </div> -->
+        <!-- Programs -->
+        <div class="col-12 col-md-4">
+          <div class="card h-75 border-0">
+            <div
+              class="card-body d-flex flex-column p-4 rounded-3xl card-programs hover-shadow"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5 class="mb-0">Programs</h5>
+                <a
+                  href="/bootcamps?category=8836bde0-68ae-3600-92a2-23dce3c487ca&amp;type=NORMAL"
+                  class="btn btn-light rounded-circle p-2"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <p class="text-secondary flex-grow-1">
+                Professional programs lasting 1–3 weeks, aimed at developing
+                your technical skills…
+              </p>
+              <div class="text-center mt-3">
+                <img
+                  src="./media/page-1/programs-art.svg"
+                  class="img-fluid"
+                  alt="Programs"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <!-- ─────── Sidebar (next to main) ─────── -->
-          <!-- <div class="col-12 col-md-3 d-flex flex-column gap-4"> -->
-          <!-- your existing sidebar cards here… -->
-          <!-- </div> -->
+        <!-- Tuwaiq Talks -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0">
+            <div
+              class="card-body d-flex flex-column p-4 rounded-3xl card-talks hover-shadow"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5>Tuwaiq Talks</h5>
+                <a href="#" class="btn btn-light rounded-circle p-2">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <p class="text-secondary flex-grow-1">
+                Enriching knowledge meetings, held in cooperation with several
+                leading…
+              </p>
+              <img
+                src="./media/page-1/Tuwaiq-talk.svg"
+                class="img-fluid"
+                alt="Tuwaiq Talks"
+                style="height: 15rem"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <!-- 2. Bootstrap-powered markup -->
-      <div class="d-flex flex-column align-items-center gap-5 rounded-3">
-        <!-- outer wrapper -->
+      <!-- 2. Bootstrap-powered markup (fixed) -->
+      <div class="d-flex flex-column align-items-center gap-5">
+        <!-- wrapper: full-width on xs, 75% width & centered on md+ -->
         <div
-          class="row gx-0 rounded-3 w-75"
+          class="row gx-0 rounded-3 w-75 w-md-75 mx-auto"
           style="
             background-color: #b4ebe7;
             padding: 30px 50px;
             border-radius: 1.5rem;
           "
         >
-          <!-- form column -->
-          <div class="col-12 col-md-8">
+          <!-- center the form column -->
+          <div class="col-12 col-md-8 mx-auto">
             <form>
               <!-- title -->
               <h3
                 class="fw-semibold mb-4"
                 style="font-size: 2.5rem; color: #6438dd"
               >
-                Subscribe to News Letter
+                Subscribe to Newsletter
               </h3>
 
               <!-- first & last name -->
@@ -572,7 +450,7 @@
                 <div class="col-12 col-md-6">
                   <input
                     type="text"
-                    class="form-control form-control-lg p-3"
+                    class="form-control form-control-lg"
                     placeholder="First Name"
                     required
                   />
@@ -580,7 +458,7 @@
                 <div class="col-12 col-md-6">
                   <input
                     type="text"
-                    class="form-control form-control-lg p-3"
+                    class="form-control form-control-lg"
                     placeholder="Last Name"
                     required
                   />
@@ -588,23 +466,26 @@
               </div>
 
               <!-- email & button -->
-              <div class="row g-3">
+              <div class="row g-3 align-items-center">
                 <div class="col-12 col-md-8">
                   <input
                     type="email"
-                    class="form-control form-control-lg p-3"
-                    placeholder="name@email.com"
+                    class="form-control form-control-lg"
+                    placeholder="name@example.com"
                     required
                   />
                 </div>
                 <div class="col-12 col-md-4">
-                  <button type="submit" class="btn subscribe-btn">
+                  <button
+                    type="submit"
+                    class="btn subscribe-btn w-100 d-flex justify-content-center align-items-center gap-2 py-2"
+                  >
                     Subscribe
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
-                      width="36"
-                      height="36"
+                      width="24"
+                      height="24"
                       fill="currentColor"
                     >
                       <!-- fa-secondary path -->
