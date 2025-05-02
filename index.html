@@ -158,10 +158,8 @@
               <!-- Call-to-action -->
               <button
                 type="button"
-                x-on:click="window.location.href='/bootcamps?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL'"
-                class="d-flex align-items-center gap-2 position-relative btn btn-language rounded py-2 px-4 fs-3 shadow-offset"
+                class="d-flex align-items-center gap-2 position-relative btn btn-outline-dark btn-language rounded py-2 px-4 fs-3 shadow-offset"
                 style="z-index: 1"
-                class="btn bg-beige text-brown shadow-brown"
               >
                 Learn now
                 <svg
@@ -449,9 +447,100 @@
 
     <footer>
       <!-- 2. Bootstrap-powered markup -->
-      <div>
-        <!-- outer wrapper: toggle bg class via Alpine -->
-        <div class="py-5 rounded-5 w-100" style="background-color: #e2d8fe">
+      <div class="d-flex flex-column align-items-center gap-5 rounded-3">
+        <!-- outer wrapper -->
+        <div
+          class="row gx-0 rounded-3 w-75"
+          style="
+            background-color: #b4ebe7;
+            padding: 30px 50px;
+            border-radius: 1.5rem;
+          "
+        >
+          <!-- form column -->
+          <div class="col-12 col-md-8">
+            <form>
+              <!-- title -->
+              <h3
+                class="fw-semibold mb-4"
+                style="font-size: 2.5rem; color: #6438dd"
+              >
+                Subscribe to News Letter
+              </h3>
+
+              <!-- first & last name -->
+              <div class="row g-3 mb-4">
+                <div class="col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- email & button -->
+              <div class="row g-3">
+                <div class="col-12 col-md-8">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="name@email.com"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-4">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center rounded-pill"
+                    style="font-size: 1.25rem"
+                  >
+                    Subscribe
+                    <!-- paper-plane icon, use Bootstrap Icons if you like -->
+                    <svg
+                      class="ms-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 512 512"
+                    >
+                      <path opacity="0.4" d="M…" />
+                      <!-- fa-primary path -->
+                      <path d="M…" />
+                      <!-- fa-secondary path -->
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- illustration column (hidden on xs) -->
+          <div
+            class="d-none d-md-flex col-md-4 justify-content-center"
+            style="margin-bottom: -30px; height: 18rem; left: 5"
+          >
+            <img
+              src="./media/page-1/Subscribe-News-Letter.svg"
+              class="img-fluid"
+              alt="mailbox graphic"
+            />
+          </div>
+        </div>
+        <div
+          class="py-5 rounded-5 w-75 align-items-center"
+          style="background-color: #e2d8fe"
+        >
           <div
             class="container-xl mx-auto px-1 text-center text-sm-start rounded-5"
           >
@@ -471,7 +560,7 @@
               </div>
 
               <!-- links pushed to the right on md+ -->
-              <div class="d-flex flex-column flex-md-row gap-4 ms-md-auto">
+              <div class="d-flex flex-column flex-md-row gap-3 ms-md-auto">
                 <!-- First column -->
                 <div class="flex-fill">
                   <ul class="list-unstyled fw-semibold mb-0">
@@ -529,7 +618,7 @@
                 >. All Rights Reserved.
               </span>
 
-              <div class="d-flex mt-3 mt-md-4">
+              <div class="d-flex mt-3 gap-0 mt-md-4">
                 <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/company/tuwaiqacademy">
                   <div
