@@ -195,6 +195,19 @@ body {
   max-height: 120px;
   object-fit: contain;
 }
+.news-card {
+  height: 538px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.news-card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.carousel-item {
+  transition: transform 0.7s ease;
+}
 
 /* footer */
 
