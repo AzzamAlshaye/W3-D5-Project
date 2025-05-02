@@ -65,27 +65,18 @@ body {
 .text-purple {
   color: #4f29b7 !important;
 }
-.text-purple-alt {
-  color: #684f46 !important;
-}
+
 .bg-purple {
   background-color: #4f29b7 !important;
 }
-.bg-purple-alt {
-  background-color: #684f46 !important;
-}
-
-.text-brown {
-  color: #684f46 !important;
+.light-gray {
+  color: #ff0000;
 }
 .bg-beige {
   background-color: #e8dfd0 !important;
 }
 .shadow-offset {
   box-shadow: 5px 5px #4f29b7 !important;
-}
-.shadow-brown {
-  box-shadow: 5px 5px #684f46 !important;
 }
 
 /* page1-hero */
@@ -154,6 +145,31 @@ body {
 }
 
 /* footer */
+
+/* base “pill” button */
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* like gap-4 */
+  width: 100%; /* full width in its column */
+  height: 63px; /* md:h-[63px] */
+  font-size: 2rem; /* text-2xl */
+  padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+  border-radius: 1rem; /* rounded-2xl ≈ 1rem */
+  transition: background-color 0.3s;
+  border: none;
+}
+
+/* light theme */
+.subscribe-btn {
+  background-color: #4f29b7;
+  color: #fff;
+}
+.subscribe-btn:hover {
+  background-color: #724fd1;
+}
+
 /* background colours */
 .bg-tuwaiq {
   background-color: #e3d8ff !important;
