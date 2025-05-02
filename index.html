@@ -3,12 +3,1987 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuwaiq Academy Navbar</title>
+
+    <!-- Bootstrap CSS -->
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.tuwaiq.edu.sa/landing/images/logo/favicon.ico"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
     />
-    <title>Document</title>
+    <!-- Bootstrap Icons (for the Sign In icon) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- style="background-color: #4931af" -->
+    <!-- 2. Navbar HTML -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-blur fixed-top">
+        <div class="container-fluid mx-1">
+          <!-- Logo -->
+          <a class="navbar-brand me-4" href="/">
+            <img
+              src="./media/logo-h.png"
+              alt="Tuwaiq Academy"
+              style="height: 7vh"
+            />
+          </a>
+          <!-- Toggler (mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse align-items-center" id="mainNav">
+            <div
+              class="d-flex flex-column flex-md-row collapse navbar-collapse justify-content-center gap-3 mb-md-0 mb-3"
+            >
+              <div
+                class="d-flex flex-column flex-md-row gap-5 p-1"
+                style="
+                  border: #eeeeee 1px solid;
+                  background-color: #fafafa;
+                  border-radius: 0.5rem;
+                "
+              >
+                <!-- Left + middle nav links -->
+                <ul class="navbar-nav align-items-center gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"
+                      >About Tuwaiq Academy</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Academies</a>
+                  </li>
+                  <!-- Divider (only on lg+) -->
+                  <div class="nav-divider d-none d-lg-block"></div>
+                </ul>
+
+                <!-- more nav links -->
+                <ul class="navbar-nav align-items-center gap-4">
+                  <!-- remove this border -->
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Test Center</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Partners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Accreditations</a>
+                  </li>
+                  <!-- Divider (only on lg+) -->
+                  <div class="nav-divider d-none d-lg-block"></div>
+                  <li class="nav-item">
+                    <a class="nav-link lang-pill fw-semibold" href="#">عربي</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- push the next items to the right -->
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item ms-3">
+                <a
+                  class="nav-link signin-pill fw-semibold d-flex align-items-center"
+                  href="#"
+                >
+                  Sign In
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    class="ms-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path
+                        d="M9 4.5H8c-2.357 0-3.536 0-4.268.732S3 7.143 3 9.5v5c0 2.357 0 3.535.732 4.268S5.643 19.5 8 19.5h1M9 6.476c0-2.293 0-3.44.707-4.067s1.788-.439 3.95-.062l2.33.407c2.394.417 3.591.626 4.302 1.504.711.879.711 2.149.711 4.69v6.105c0 2.54 0 3.81-.71 4.689-.712.878-1.91 1.087-4.304 1.505l-2.328.406c-2.162.377-3.243.565-3.95-.062S9 19.817 9 17.524z"
+                      />
+                      <path stroke-linecap="round" d="M12 11v2" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="container py-4">
+      <!-- Main + Sidebar -->
+      <div class="row g-4">
+        <!-- Main panel -->
+        <div class="col-12 col-lg-9 position-relative">
+          <div
+            class="card h-100 border-0 bg-purple-light rounded-3 overflow-hidden position-relative"
+          >
+            <div class="card-body position-relative">
+              <!-- Decorative mountain: only on lg+ -->
+              <img
+                src="./media/page-1/Tuwaiq_mounten.png"
+                class="position-absolute top-0 z-1 d-none d-lg-block"
+                style="width: 83%; height: 100%; bottom: -1rem; right: -20rem"
+                alt="Tuwaiq Mountain"
+              />
+
+              <!-- Headings -->
+              <h1 class="fw-bold display-5 mb-2 text-purple">
+                Learn Future Technologies
+              </h1>
+              <h2 class="h3 fw-semibold mb-4 text-purple">In One Place</h2>
+
+              <!-- Description -->
+              <p class="text-secondary mb-4" style="max-width: 75%">
+                Professional boot camps and programs in partnership with major
+                international organizations to develop your skills in advanced
+                technology fields, with a methodology based on applied learning
+                within a competitive educational environment.
+              </p>
+
+              <!-- Call-to-action -->
+              <button
+                type="button"
+                class="d-flex align-items-center gap-2 position-relative btn btn-outline-dark btn-language rounded py-2 px-4 fs-3 shadow-offset"
+                style="z-index: 1"
+              >
+                Learn now
+                <svg
+                  width="28"
+                  height="25"
+                  viewBox="0 0 28 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.8125 1.06869C10.8125 0.873836 10.8979 0.68696 11.05 0.549176C11.2021 0.411391 11.4084 0.333984 11.6234 0.333984H15.4078C15.6229 0.333984 15.8292 0.411391 15.9812 0.549176C16.1333 0.68696 16.2188 0.873836 16.2188 1.06869V4.49733C16.2188 4.69218 16.1333 4.87906 15.9812 5.01684C15.8292 5.15463 15.6229 5.23203 15.4078 5.23203H11.6234C11.4084 5.23203 11.2021 5.15463 11.05 5.01684C10.8979 4.87906 10.8125 4.69218 10.8125 4.49733V1.06869Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M11.6219 5.23275C11.4068 5.23275 11.2005 5.31016 11.0485 5.44794C10.8964 5.58573 10.8109 5.7726 10.8109 5.96746L10 5.23275C10.2151 5.23275 10.4213 5.15535 10.5734 5.01756C10.7255 4.87978 10.8109 4.6929 10.8109 4.49805L11.6219 5.23275Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M5.40625 5.96713C5.40625 5.77227 5.49169 5.5854 5.64377 5.44761C5.79585 5.30983 6.00212 5.23242 6.21719 5.23242H10.0016C10.2167 5.23242 10.4229 5.30983 10.575 5.44761C10.7271 5.5854 10.8125 5.77227 10.8125 5.96713V9.39577C10.8125 9.59062 10.7271 9.7775 10.575 9.91528C10.4229 10.0531 10.2167 10.1305 10.0016 10.1305H6.21719C6.00212 10.1305 5.79585 10.0531 5.64377 9.91528C5.49169 9.7775 5.40625 9.59062 5.40625 9.39577V5.96713Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M10 10.1292C10.2151 10.1292 10.4213 10.2066 10.5734 10.3444C10.7255 10.4822 10.8109 10.6691 10.8109 10.8639L11.6219 10.1292C11.4068 10.1292 11.2005 10.0518 11.0485 9.91405C10.8964 9.77626 10.8109 9.58939 10.8109 9.39453L10 10.1292Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M6.21563 10.1292C6.00056 10.1292 5.79429 10.2066 5.64221 10.3444C5.49013 10.4822 5.40469 10.6691 5.40469 10.8639L4.59375 10.1292C4.80882 10.1292 5.01509 10.0518 5.16717 9.91405C5.31925 9.77626 5.40469 9.58939 5.40469 9.39453L6.21563 10.1292Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M0 10.8656C0 10.6707 0.0854386 10.4838 0.237519 10.346C0.3896 10.2083 0.595865 10.1309 0.81094 10.1309H4.59533C4.8104 10.1309 5.01667 10.2083 5.16875 10.346C5.32083 10.4838 5.40627 10.6707 5.40627 10.8656V14.2942C5.40627 14.4891 5.32083 14.6759 5.16875 14.8137C5.01667 14.9515 4.8104 15.0289 4.59533 15.0289H0.81094C0.595865 15.0289 0.3896 14.9515 0.237519 14.8137C0.0854386 14.6759 0 14.4891 0 14.2942V10.8656Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M4.59375 15.0277C4.80882 15.0277 5.01509 15.1051 5.16717 15.2429C5.31925 15.3807 5.40469 15.5675 5.40469 15.7624L6.21563 15.0277C6.00056 15.0277 5.79429 14.9503 5.64221 14.8125C5.49013 14.6747 5.40469 14.4878 5.40469 14.293L4.59375 15.0277Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M5.40625 15.7621C5.40625 15.5672 5.49169 15.3803 5.64377 15.2425C5.79585 15.1047 6.00212 15.0273 6.21719 15.0273H10.0016C10.2167 15.0273 10.4229 15.1047 10.575 15.2425C10.7271 15.3803 10.8125 15.5672 10.8125 15.7621V19.1907C10.8125 19.3855 10.7271 19.5724 10.575 19.7102C10.4229 19.848 10.2167 19.9254 10.0016 19.9254H6.21719C6.00212 19.9254 5.79585 19.848 5.64377 19.7102C5.49169 19.5724 5.40625 19.3855 5.40625 19.1907V15.7621Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M10 19.9261C10.2151 19.9261 10.4213 20.0035 10.5734 20.1413C10.7255 20.2791 10.8109 20.466 10.8109 20.6608L11.6219 19.9261C11.4068 19.9261 11.2005 19.8487 11.0485 19.7109C10.8964 19.5731 10.8109 19.3863 10.8109 19.1914L10 19.9261Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M10.8125 20.6605C10.8125 20.4656 10.8979 20.2788 11.05 20.141C11.2021 20.0032 11.4084 19.9258 11.6234 19.9258H15.4078C15.6229 19.9258 15.8292 20.0032 15.9812 20.141C16.1333 20.2788 16.2188 20.4656 16.2188 20.6605V24.0891C16.2188 24.284 16.1333 24.4709 15.9812 24.6086C15.8292 24.7464 15.6229 24.8238 15.4078 24.8238H11.6234C11.4084 24.8238 11.2021 24.7464 11.05 24.6086C10.8979 24.4709 10.8125 24.284 10.8125 24.0891V20.6605Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M10.8125 10.8656C10.8125 10.6707 10.8979 10.4838 11.05 10.346C11.2021 10.2083 11.4084 10.1309 11.6234 10.1309H15.4078C15.6229 10.1309 15.8292 10.2083 15.9812 10.346C16.1333 10.4838 16.2188 10.6707 16.2188 10.8656V14.2942C16.2188 14.4891 16.1333 14.6759 15.9812 14.8137C15.8292 14.9515 15.6229 15.0289 15.4078 15.0289H11.6234C11.4084 15.0289 11.2021 14.9515 11.05 14.8137C10.8979 14.6759 10.8125 14.4891 10.8125 14.2942V10.8656Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M13.5156 10.1309H18.9219V15.0289H13.5156V10.1309Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M11.6219 15.0277C11.4068 15.0277 11.2005 15.1051 11.0485 15.2429C10.8964 15.3807 10.8109 15.5675 10.8109 15.7624L10 15.0277C10.2151 15.0277 10.4213 14.9503 10.5734 14.8125C10.7255 14.6747 10.8109 14.4878 10.8109 14.293L11.6219 15.0277Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M16.2188 10.8656C16.2188 10.6707 16.3042 10.4838 16.4563 10.346C16.6083 10.2083 16.8146 10.1309 17.0297 10.1309H20.8141C21.0292 10.1309 21.2354 10.2083 21.3875 10.346C21.5396 10.4838 21.625 10.6707 21.625 10.8656V14.2942C21.625 14.4891 21.5396 14.6759 21.3875 14.8137C21.2354 14.9515 21.0292 15.0289 20.8141 15.0289H17.0297C16.8146 15.0289 16.6083 14.9515 16.4563 14.8137C16.3042 14.6759 16.2188 14.4891 16.2188 14.2942V10.8656Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M18.9219 10.1309H24.3281V15.0289H18.9219V10.1309Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                  <path
+                    d="M21.625 10.8656C21.625 10.6707 21.7104 10.4838 21.8625 10.346C22.0146 10.2083 22.2209 10.1309 22.4359 10.1309H26.2203C26.4354 10.1309 26.6417 10.2083 26.7937 10.346C26.9458 10.4838 27.0313 10.6707 27.0313 10.8656V14.2942C27.0313 14.4891 26.9458 14.6759 26.7937 14.8137C26.6417 14.9515 26.4354 15.0289 26.2203 15.0289H22.4359C22.2209 15.0289 22.0146 14.9515 21.8625 14.8137C21.7104 14.6759 21.625 14.4891 21.625 14.2942V10.8656Z"
+                    :fill="theme === 'founding_day' ? '#684F46' : '#4F29B7'"
+                    fill="#4F29B7"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- Logos carousel: Mobile & Tablet (below lg) -->
+              <div
+                class="position-absolute bottom-0 start-0 end-5 mb-5 bg-custom-teal d-block d-lg-none"
+              >
+                <div class="logos-slide">
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+                  <!-- repeat as needed for seamless loop -->
+                </div>
+              </div>
+
+              <!-- Logos carousel: Desktop only (lg+) -->
+              <div
+                class="position-relative d-none d-lg-block"
+                style="bottom: -6rem"
+              >
+                <div class="logos-slide">
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+                  <img src="./media/page-1/slide-Apple.png" alt="apple logo" />
+                  <img src="./media/page-1/slide-aws.png" alt="aws logo" />
+                  <img
+                    src="./media/page-1/slide-CertNexus.png"
+                    alt="CertNexus logo"
+                  />
+                  <img
+                    src="./media/page-1/slide-comptia.png"
+                    alt="comptia logo"
+                  />
+                  <img src="./media/page-1/slide-ibm.png" alt="ibm logo" />
+                  <img src="./media/page-1/slide-Meta.png" alt="meta logo" />
+                  <img
+                    src="./media/page-1/slide-microsoft.png"
+                    alt="microsoft logo"
+                  />
+                  <!-- repeat for loop -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-12 col-lg-3 d-flex flex-column gap-4">
+          <!-- Registrants count -->
+          <div class="card text-end p-4 bg-teal-light rounded-3 text-center">
+            <p class="fs-5 fw-bold mb-2 text-success">
+              The number of registrants in camps and programs so far.
+            </p>
+            <p
+              id="counter44"
+              x-text="statistics.registers"
+              class="display-6 fw-bold"
+            >
+              1,715,793
+            </p>
+          </div>
+
+          <!-- Holberton program card -->
+          <div
+            class="card position-relative p-4 border rounded-3"
+            style="
+              height: 342px;
+              background-color: #ffdde1;
+              border-color: #dfdfdf;
+            "
+          >
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h2 class="h4 fw-semibold text-danger">
+                Holberton <br />
+                Foundational Track
+              </h2>
+              <a
+                href=""
+                target="_blank"
+                class="btn btn-sm btn-danger rounded-pill d-flex align-items-center"
+              >
+                Join now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 384 512"
+                  style="height: 14px; width: 14px"
+                >
+                  <!-- …arrow path… -->
+                </svg>
+              </a>
+            </div>
+
+            <p class="text-secondary">
+              The foundational track of Holberton Academy, the first global
+              academy in the Middle East.
+            </p>
+
+            <!-- Overlay image -->
+            <div
+              class="position-absolute bottom-0 start-50 translate-middle-x"
+              style="width: 85%; transform: translateY(50%)"
+            >
+              <img
+                src="./media/page-1/Holberton-Foundational-Track-logo.png"
+                class="img-fluid rounded opacity-50"
+                alt="Holberton"
+              />
+            </div>
+
+            <!-- Icon cards -->
+            <div class="d-flex justify-content-between mt-4 gap-2">
+              <div
+                class="card p-3 shadow-sm d-flex justify-content-center align-items-center rotate-3"
+                style="width: 154px; height: 74px; opacity: 95%"
+              >
+                <img
+                  src="./media/page-1/Holberton-Foundational-Track-laptop.svg"
+                  class="img-fluid"
+                  alt="Laptop"
+                />
+              </div>
+              <div
+                class="card p-3 shadow-sm d-flex justify-content-center align-items-center translate-up"
+                style="width: 188px; height: 73px; opacity: 95%"
+              >
+                <img
+                  src="./media/page-1/Holberton-Foundational-Track-VR.svg"
+                  class="img-fluid"
+                  alt="VR Headset"
+                />
+              </div>
+              <div
+                class="card p-3 shadow-sm d-flex justify-content-center align-items-center rotate-neg-3"
+                style="width: 156px; height: 73px; opacity: 95%"
+              >
+                <img
+                  src="./media/page-1/Holberton-Foundational-Track-keyboard.svg"
+                  class="img-fluid"
+                  alt="Keyboard"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature cards -->
+      <div class="row g-4 mt-4">
+        <!-- Bootcamps -->
+        <div class="col-12 col-md-4">
+          <div class="card h-75 border-0">
+            <div
+              class="card-body d-flex flex-column p-4 rounded-3xl card-bootcamps hover-shadow"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5 class="mb-0">Bootcamps</h5>
+                <a href="#" class="btn btn-light rounded-circle p-2">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <p class="text-secondary">
+                Professional bootcamps and courses to earn the necessary skills…
+              </p>
+              <div class="text-center mt-3">
+                <img
+                  src="./media/page-1/bootcamps-laptop.png"
+                  class="img-fluid"
+                  alt="Bootcamps"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-12 col-md-4">
+          <div class="card h-75 border-0">
+            <div
+              class="card-body d-flex flex-column p-4 rounded-3xl card-programs hover-shadow"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5 class="mb-0">Programs</h5>
+                <a href="" class="btn btn-light rounded-circle p-2">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <p class="text-secondary flex-grow-1">
+                Professional programs lasting 1–3 weeks, aimed at developing
+                your technical skills…
+              </p>
+              <div class="text-center mt-3">
+                <img
+                  src="./media/page-1/programs-art.svg"
+                  class="img-fluid"
+                  alt="Programs"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuwaiq Talks -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0">
+            <div
+              class="card-body d-flex flex-column p-4 rounded-3xl card-talks hover-shadow"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5>Tuwaiq Talks</h5>
+                <a href="#" class="btn btn-light rounded-circle p-2">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <p class="text-secondary flex-grow-1">
+                Enriching knowledge meetings, held in cooperation with several
+                leading…
+              </p>
+              <img
+                src="./media/page-1/Tuwaiq-talk.svg"
+                class="img-fluid"
+                alt="Tuwaiq Talks"
+                style="height: 15rem"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Carousel Container -->
+      <div class="container-fluid px-0">
+        <div class="container px-0" style="max-width: 1680px">
+          <!-- Header Row -->
+          <div class="row align-items-center justify-content-between py-4 px-3">
+            <!-- Title + Link -->
+            <div
+              class="col-12 col-md-auto d-flex align-items-center mb-3 mb-md-0"
+            >
+              <h5 class="mb-0">Registration closing soon</h5>
+              <a
+                href=""
+                class="ms-3 text-primary text-decoration-none d-flex align-items-center"
+              >
+                View More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="ms-1"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </a>
+            </div>
+            <!-- Nav Buttons (md+) -->
+            <div class="col-auto d-none d-md-flex">
+              <button
+                class="btn btn-light rounded-circle me-2"
+                type="button"
+                data-bs-target="#latestBootcampsCarousel"
+                data-bs-slide="prev"
+                aria-label="Previous"
+              >
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button
+                class="btn btn-light rounded-circle"
+                type="button"
+                data-bs-target="#latestBootcampsCarousel"
+                data-bs-slide="next"
+                aria-label="Next"
+              >
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bootstrap Carousel -->
+          <div
+            id="latestBootcampsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicators (md+) -->
+            <div
+              class="carousel-indicators d-none d-md-flex justify-content-center mb-0"
+            >
+              <button
+                type="button"
+                data-bs-target="#latestBootcampsCarousel"
+                data-bs-slide-to="0"
+                class="active rounded-circle"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#latestBootcampsCarousel"
+                data-bs-slide-to="1"
+                class="rounded-circle"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#latestBootcampsCarousel"
+                data-bs-slide-to="2"
+                class="rounded-circle"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <!-- Slide 1: Cards 1–4 -->
+              <div class="carousel-item active">
+                <div class="row gx-3">
+                  <!-- Card 1 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/excel-laptop.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Excel for Beginners"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2"
+                          >Executive Programs</span
+                        >
+                        <h6 class="card-title flex-grow-1">
+                          Excel for Beginners Program
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Program – 1 week
+                        </p>
+                        <p class="card-text small text-muted mb-3">Adults</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 2 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-cpu.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="PCB Design"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Mechatronics Engineering
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Basics of PCB Design
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Program – 1 week
+                        </p>
+                        <p class="card-text small text-muted mb-3">Adults</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 8 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-brain.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="SQL with Python"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Data Science & AI
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          SQL Database with Python
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Program – 1 week
+                        </p>
+                        <p class="card-text small text-muted mb-3">Adults</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 8 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-brain.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="AI Fundamentals"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Data Science & AI
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Basics of Artificial Intelligence
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Program – 2 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Juniors</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 9 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Cards 5–8 -->
+              <div class="carousel-item">
+                <div class="row gx-3">
+                  <!-- Card 5 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-cpu.png"
+                          class="object-fit-cover w-100 h-150"
+                          alt="Mechatronics Basics"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Mechatronics Engineering
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Basics of Mechatronics
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Program – 2 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Juniors</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 23 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 6 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-phone.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Python Fundamentals"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Software Dev & Apps
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Python Fundamentals
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Program – 2 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Juniors</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 23 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 7 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-phone.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Web Dev with Python"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Software Dev & Apps
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Web Development with Python
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Bootcamp – 12 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Adults</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 43 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 8 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-phone.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Web Dev with Java"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Software Dev & Apps
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Web Development with Java
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Bootcamp – 12 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Adults</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 50 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Cards 9–12 -->
+              <div class="carousel-item">
+                <div class="row gx-3">
+                  <!-- Card 9 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-brain.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Generative AI"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Data Science & AI
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Generative AI with LLAMA
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Bootcamp – 6 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Adults</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 51 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 10 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-cpu.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Arduino Robotics"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Mechatronics Engineering
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Programming Robots with Arduino
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Bootcamp – 5 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Juniors</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 57 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 11 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-cpu.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="Unity Game Dev"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Software Dev & Apps
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          Game Development with Unity
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Bootcamp – 5 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Juniors</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 57 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 12 -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="ratio ratio-4x3 overflow-hidden rounded-top">
+                        <img
+                          src="./media/page-1/Registration-closing-soon-brain.png"
+                          class="object-fit-cover w-100 h-100"
+                          alt="ML & AI"
+                        />
+                      </div>
+                      <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2">
+                          Data Science & AI
+                        </span>
+                        <h6 class="card-title flex-grow-1">
+                          AI & Machine Learning
+                        </h6>
+                        <p class="card-text small text-muted mb-1">
+                          Bootcamp – 5 weeks
+                        </p>
+                        <p class="card-text small text-muted mb-3">Juniors</p>
+                        <div class="d-flex align-items-center">
+                          <span
+                            class="badge bg-success me-2"
+                            style="width: 0.75rem; height: 0.75rem"
+                          ></span>
+                          <small class="text-success">Ends in 57 days</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 mb-5" style="background-color: #f5f5f7">
+      <div class="container" style="max-width: 1200px">
+        <!-- Section title -->
+        <p class="fs-4 fw-semibold mb-4">Tuwaiq in numbers</p>
+
+        <!-- Outer flex: column on mobile, row on lg+ -->
+        <div class="d-flex flex-column flex-lg-row gap-4">
+          <!-- Left: big 363×645 card -->
+          <div
+            class="card position-relative"
+            style="
+              border-radius: 20px;
+              width: 100%;
+              max-width: 363px;
+              height: 645px;
+              overflow: hidden;
+            "
+          >
+            <div class="card-body d-flex flex-column">
+              <h5 class="mb-3">Global Partnership</h5>
+              <h3 class="fw-semibold mb-2">+60</h3>
+              <span class="text-muted small">Organization</span>
+            </div>
+            <img
+              src="./media/page-1/Tuwaiq-in-numbers-partnership.png"
+              alt="partners"
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 120%;
+              "
+            />
+          </div>
+
+          <!-- Right: two rows of smaller cards -->
+          <div class="d-flex flex-column flex-grow-1 gap-4">
+            <!-- Row 1 -->
+            <div class="d-flex flex-column flex-md-row gap-4">
+              <!-- 400×310 card -->
+              <div
+                class="card position-relative"
+                style="
+                  border-radius: 20px;
+                  width: 100%;
+                  max-width: 400px;
+                  height: 310px;
+                  overflow: hidden;
+                "
+              >
+                <div class="card-body d-flex flex-column">
+                  <h5 class="mb-2">Bootcamps and Courses</h5>
+                  <h3 class="fw-semibold mb-2">1,836</h3>
+                  <span class="text-muted small">Bootcamps and Courses</span>
+                </div>
+                <img
+                  src="./media/page-1/Registration-closing-soon-laptop.png"
+                  alt="dashboard"
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                  "
+                />
+              </div>
+
+              <!-- 501×310 card -->
+              <div
+                class="card position-relative"
+                style="
+                  border-radius: 20px;
+                  width: 100%;
+                  max-width: 501px;
+                  height: 310px;
+                  overflow: hidden;
+                "
+              >
+                <div class="card-body d-flex flex-column">
+                  <h5 class="mb-2">Graduates</h5>
+                  <h3 class="fw-semibold mb-2">32,016</h3>
+                  <span class="text-muted small">In-person Trainees</span>
+                </div>
+                <img
+                  src="./media/page-1/Tuwaiq-in-numbers-graduates.png"
+                  alt="diploma"
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                  "
+                />
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="d-flex flex-column flex-md-row gap-4">
+              <!-- 501×310 card -->
+              <div
+                class="card position-relative"
+                style="
+                  border-radius: 20px;
+                  width: 100%;
+                  max-width: 501px;
+                  height: 310px;
+                  overflow: hidden;
+                "
+              >
+                <div class="card-body d-flex flex-column">
+                  <h5 class="mb-2">Satr Platform</h5>
+                  <h3 class="fw-semibold mb-2">888,499</h3>
+                  <span class="text-muted small">Trainee</span>
+                </div>
+                <img
+                  src="./media/page-1/Tuwaiq-in-numbers-platforms.png"
+                  alt="devices"
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                  "
+                />
+              </div>
+
+              <!-- 400×310 card -->
+              <div
+                class="card position-relative"
+                style="
+                  border-radius: 20px;
+                  width: 100%;
+                  max-width: 400px;
+                  height: 310px;
+                  overflow: hidden;
+                "
+              >
+                <div class="card-body d-flex flex-column">
+                  <h5 class="mb-2">
+                    The employment rate of bootcamp graduates
+                  </h5>
+                  <h3 class="fw-semibold mb-2">80%</h3>
+                  <span class="text-muted small">Employee</span>
+                </div>
+                <img
+                  src="./media/page-1/Tuwaiq-in-numbers-family.png"
+                  alt="employment rate"
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container py-5">
+        <!-- DESKTOP: 4 cards per slide (shown ≥992px) -->
+        <div class="d-none d-lg-block">
+          <div
+            id="desktopCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+            data-bs-wrap="true"
+          >
+            <div class="carousel-inner">
+              <!-- slide 1: A B C D -->
+              <div class="carousel-item active">
+                <div class="row g-4">
+                  <!-- Card A -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card1.jpg"
+                        class="card-img"
+                        alt="Game Dev Diploma"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy launches first diploma in Game
+                          Development and Virtual Worlds in partnership with
+                          Meta
+                        </h6>
+                        <small>21/08/2024</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card B -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card2.png"
+                        class="card-img"
+                        alt="The Garage Academy"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Launch of “The Garage Academy” with Tuwaiq Academy to
+                          support accelerator projects
+                        </h6>
+                        <small>05/05/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card C -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card3.png"
+                        class="card-img"
+                        alt="Geneva Inventions Fair"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy & Misk Schools students win 4 gold &
+                          bronze medals at Geneva Inventions Fair
+                        </h6>
+                        <small>13/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card D -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card4.jpeg"
+                        class="card-img"
+                        alt="Apple Global Challenge"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy celebrates its students’ victory in the
+                          Apple Global Challenge
+                        </h6>
+                        <small>10/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slide 2: B C D A -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <!-- Card B -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card2.png"
+                        class="card-img"
+                        alt="The Garage Academy"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Launch of “The Garage Academy” with Tuwaiq Academy to
+                          support accelerator projects
+                        </h6>
+                        <small>05/05/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card C -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card3.png"
+                        class="card-img"
+                        alt="Geneva Inventions Fair"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy & Misk Schools students win 4 gold &
+                          bronze medals at Geneva Inventions Fair
+                        </h6>
+                        <small>13/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card D -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card4.jpeg"
+                        class="card-img"
+                        alt="Apple Global Challenge"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy celebrates its students’ victory in the
+                          Apple Global Challenge
+                        </h6>
+                        <small>10/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card A -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card1.jpg"
+                        class="card-img"
+                        alt="Game Dev Diploma"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy launches first diploma in Game
+                          Development and Virtual Worlds in partnership with
+                          Meta
+                        </h6>
+                        <small>21/08/2024</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slide 3: C D A B -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <!-- Card C -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card3.png"
+                        class="card-img"
+                        alt="Geneva Inventions Fair"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy & Misk Schools students win 4 gold &
+                          bronze medals at Geneva Inventions Fair
+                        </h6>
+                        <small>13/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card D -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card4.jpeg"
+                        class="card-img"
+                        alt="Apple Global Challenge"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy celebrates its students’ victory in the
+                          Apple Global Challenge
+                        </h6>
+                        <small>10/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card A -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card1.jpg"
+                        class="card-img"
+                        alt="Game Dev Diploma"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy launches first diploma in Game
+                          Development and Virtual Worlds in partnership with
+                          Meta
+                        </h6>
+                        <small>21/08/2024</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card B -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card2.png"
+                        class="card-img"
+                        alt="The Garage Academy"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Launch of “The Garage Academy” with Tuwaiq Academy to
+                          support accelerator projects
+                        </h6>
+                        <small>05/05/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slide 4: D A B C -->
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <!-- Card D -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card4.jpeg"
+                        class="card-img"
+                        alt="Apple Global Challenge"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy celebrates its students’ victory in the
+                          Apple Global Challenge
+                        </h6>
+                        <small>10/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card A -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card1.jpg"
+                        class="card-img"
+                        alt="Game Dev Diploma"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy launches first diploma in Game
+                          Development and Virtual Worlds in partnership with
+                          Meta
+                        </h6>
+                        <small>21/08/2024</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card B -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card2.png"
+                        class="card-img"
+                        alt="The Garage Academy"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Launch of “The Garage Academy” with Tuwaiq Academy to
+                          support accelerator projects
+                        </h6>
+                        <small>05/05/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card C -->
+                  <div class="col-3">
+                    <div class="card text-white bg-dark news-card">
+                      <img
+                        src="./media/page-1/news-sldieshow-card3.png"
+                        class="card-img"
+                        alt="Geneva Inventions Fair"
+                      />
+                      <div
+                        class="card-img-overlay d-flex flex-column justify-content-end"
+                        style="background: rgba(0, 0, 0, 0.5)"
+                      >
+                        <h6 class="card-title">
+                          Tuwaiq Academy & Misk Schools students win 4 gold &
+                          bronze medals at Geneva Inventions Fair
+                        </h6>
+                        <small>13/04/2025</small>
+                        <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#desktopCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#desktopCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle p-2"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- MOBILE/TABLET: 1 card per slide (shown <992px) -->
+        <div class="d-lg-none">
+          <div
+            id="mobileCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+            data-bs-wrap="true"
+          >
+            <div class="carousel-inner">
+              <!-- Card A -->
+              <div class="carousel-item active">
+                <div class="card text-white bg-dark news-card">
+                  <img
+                    src="./media/page-1/news-sldieshow-card1.jpg"
+                    class="card-img"
+                    alt="Game Dev Diploma"
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                    style="background: rgba(0, 0, 0, 0.5)"
+                  >
+                    <h6 class="card-title">
+                      Tuwaiq Academy launches first diploma in Game Development
+                      and Virtual Worlds in partnership with Meta
+                    </h6>
+                    <small>21/08/2024</small>
+                    <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card B -->
+              <div class="carousel-item">
+                <div class="card text-white bg-dark news-card">
+                  <img
+                    src="./media/page-1/news-sldieshow-card2.png"
+                    class="card-img"
+                    alt="The Garage Academy"
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                    style="background: rgba(0, 0, 0, 0.5)"
+                  >
+                    <h6 class="card-title">
+                      Launch of “The Garage Academy” with Tuwaiq Academy to
+                      support accelerator projects
+                    </h6>
+                    <small>05/05/2025</small>
+                    <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card C -->
+              <div class="carousel-item">
+                <div class="card text-white bg-dark news-card">
+                  <img
+                    src="./media/page-1/news-sldieshow-card3.png"
+                    class="card-img"
+                    alt="Geneva Inventions Fair"
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                    style="background: rgba(0, 0, 0, 0.5)"
+                  >
+                    <h6 class="card-title">
+                      Tuwaiq Academy & Misk Schools students win 4 gold & bronze
+                      medals at Geneva Inventions Fair
+                    </h6>
+                    <small>13/04/2025</small>
+                    <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card D -->
+              <div class="carousel-item">
+                <div class="card text-white bg-dark news-card">
+                  <img
+                    src="./media/page-1/news-sldieshow-card4.jpeg"
+                    class="card-img"
+                    alt="Apple Global Challenge"
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                    style="background: rgba(0, 0, 0, 0.5)"
+                  >
+                    <h6 class="card-title">
+                      Tuwaiq Academy celebrates its students’ victory in the
+                      Apple Global Challenge
+                    </h6>
+                    <small>10/04/2025</small>
+                    <a href="#" class="btn btn-sm btn-light mt-2">More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mobile controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle p-2"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- 2. Bootstrap-powered markup (fixed) -->
+      <div class="d-flex flex-column align-items-center gap-5">
+        <!-- wrapper: full-width on xs, 75% width & centered on md+ -->
+        <div
+          class="row gx-0 rounded-3 w-75 w-md-75 mx-auto"
+          style="
+            background-color: #b4ebe7;
+            padding: 30px 50px;
+            border-radius: 1.5rem;
+          "
+        >
+          <!-- center the form column -->
+          <div class="col-12 col-md-8 mx-auto">
+            <form>
+              <!-- title -->
+              <h3
+                class="fw-semibold mb-4"
+                style="font-size: 2.5rem; color: #6438dd"
+              >
+                Subscribe to Newsletter
+              </h3>
+
+              <!-- first & last name -->
+              <div class="row g-3 mb-4">
+                <div class="col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- email & button -->
+              <div class="row g-3 align-items-center">
+                <div class="col-12 col-md-8">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-4">
+                  <button
+                    type="submit"
+                    class="btn subscribe-btn w-100 d-flex justify-content-center align-items-center gap-2 py-2"
+                  >
+                    Subscribe
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <!-- fa-secondary path -->
+                      <path
+                        opacity="1"
+                        d="M0 288c0 .7 0 1.3 .1 2c.8 12.2 8.4 22.9 19.6 27.6l112 46.7L160 376l0-8c0-4.2 1.7-8.3 4.7-11.3l13-13c59.6-59.6 119.2-119.2 178.8-178.7c.1-.1 .2-.2 .2-.3c3-3 6.8-4.5 10.7-4.7s7.9 1.1 11 3.9c3.7 3.3 5.6 7.7 5.6 12.1c0 3.4-1.1 6.8-3.3 9.7L224 389.4l0 13.2c20 8.3 40 16.7 60 25c39.9 16.6 79.8 33.2 119.7 49.9c9.1 3.8 19.4 3.2 28-1.6s14.5-13.3 16-23l64-416c1.9-12.1-3.4-24.3-13.5-31.2C492.7 1.9 486.4 0 480 0c-5.5 0-10.9 1.4-15.9 4.2l-448 256C6.1 265.9 0 276.6 0 288z"
+                      />
+                      <!-- fa-primary path -->
+                      <path
+                        opacity="0.4"
+                        d="M380.7 185.8c5.1-6.7 4.2-16.2-2.1-21.8s-15.9-5.3-21.9 .7l-179 179-13 13c-3 3-4.7 7.1-4.7 11.3l0 8 0 56 0 48c0 13.2 8.1 25 20.3 29.8s26.2 1.6 35.2-8.1L284 427.7l-60-25 0-13.2L380.7 185.8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- illustration column (hidden on xs) -->
+          <div
+            class="d-none d-md-flex col-md-4 justify-content-center"
+            style="margin-bottom: -30px; height: 18rem; left: 5"
+          >
+            <img
+              src="./media/page-1/Subscribe-News-Letter.svg"
+              class="img-fluid"
+              alt="mailbox graphic"
+            />
+          </div>
+        </div>
+        <div
+          class="py-4 rounded-5 w-100 align-items-center"
+          style="background-color: #e2d8fe"
+        >
+          <div
+            class="container-xl mx-auto px-1 text-center text-sm-start rounded-5"
+          >
+            <!-- logo + links -->
+            <div
+              class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between"
+            >
+              <!-- logo on the left -->
+              <div class="mb-3 mb-md-0">
+                <a href="/" class="d-flex align-items-center gap-3">
+                  <img
+                    src="https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h.png"
+                    alt="Tuwaiq"
+                    style="height: 5rem"
+                  />
+                </a>
+              </div>
+
+              <!-- links pushed to the right on md+ -->
+              <div class="d-flex flex-column flex-md-row gap-3 ms-md-auto">
+                <!-- First column -->
+                <div class="flex-fill">
+                  <ul class="list-unstyled fw-semibold mb-0">
+                    <li class="mb-3">
+                      <a
+                        href="https://tuwaiq.edu.sa/form/YxdJKJwy"
+                        class="text-decoration-none text-tuwaiq"
+                      >
+                        Join us as trainer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/about" class="text-decoration-none text-tuwaiq">
+                        About Tuwaiq Academy
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Second column -->
+                <div class="flex-fill">
+                  <ul class="list-unstyled fw-semibold mb-0">
+                    <li class="mb-3">
+                      <a
+                        href="/privacy"
+                        class="text-decoration-none text-tuwaiq"
+                      >
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/terms" class="text-decoration-none text-tuwaiq">
+                        Terms and Conditions
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- divider -->
+            <hr class="my-2 border border-custom" />
+
+            <!-- copyright + social icons -->
+            <div
+              class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-between"
+            >
+              <span class="small mt-3 mt-md-0 text-tuwaiq">
+                © 2025
+                <a
+                  href="https://tuwaiq.edu.sa/"
+                  class="list-unstyled text-decoration-none text-tuwaiq"
+                >
+                  Tuwaiq Academy </a
+                >. All Rights Reserved.
+              </span>
+
+              <div class="d-flex mt-3 gap-0 mt-md-4">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/company/tuwaiqacademy">
+                  <div
+                    class="bg-purple rounded-pill p-2 d-flex justify-content-center align-items-center social-icon"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="40"
+                      width="40"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="visually-hidden">LinkedIn</span>
+                </a>
+
+                <!-- Snapchat -->
+                <a
+                  href="https://www.snapchat.com/add/tuwaiqacademy"
+                  class="text-white ms-3"
+                >
+                  <div
+                    class="bg-purple rounded-pill p-2 d-flex justify-content-center align-items-center social-icon"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M496.9 366.6c-3.4-9.2-9.8-14.1-17.1-18.2-1.4-.8-2.6-1.5-3.7-1.9-2.2-1.1-4.4-2.2-6.6-3.4-22.8-12.1-40.6-27.3-53-45.4a102.9 102.9 0 0 1 -9.1-16.1c-1.1-3-1-4.7-.2-6.3a10.2 10.2 0 0 1 2.9-3c3.9-2.6 8-5.2 10.7-7 4.9-3.2 8.8-5.7 11.2-7.4 9.4-6.5 15.9-13.5 20-21.3a42.4 42.4 0 0 0 2.1-35.2c-6.2-16.3-21.6-26.4-40.3-26.4a55.5 55.5 0 0 0 -11.7 1.2c-1 .2-2.1 .5-3.1 .7 .2-11.2-.1-22.9-1.1-34.5-3.5-40.8-17.8-62.1-32.7-79.2A130.2 130.2 0 0 0 332.1 36.4C309.5 23.5 283.9 17 256 17S202.6 23.5 180 36.4a129.7 129.7 0 0 0 -33.3 26.8c-14.9 17-29.2 38.4-32.7 79.2-1 11.6-1.2 23.4-1.1 34.5-1-.3-2-.5-3.1-.7a55.5 55.5 0 0 0 -11.7-1.2c-18.7 0-34.1 10.1-40.3 26.4a42.4 42.4 0 0 0 2 35.2c4.1 7.8 10.7 14.7 20 21.3 2.5 1.7 6.4 4.2 11.2 7.4 2.6 1.7 6.5 4.2 10.3 6.7a11.1 11.1 0 0 1 3.3 3.3c.8 1.6 .8 3.4-.4 6.6a102 102 0 0 1 -8.9 15.8c-12.1 17.7-29.4 32.6-51.4 44.6C32.4 348.6 20.2 352.8 15.1 366.7c-3.9 10.5-1.3 22.5 8.5 32.6a49.1 49.1 0 0 0 12.4 9.4 134.3 134.3 0 0 0 30.3 12.1 20 20 0 0 1 6.1 2.7c3.6 3.1 3.1 7.9 7.8 14.8a34.5 34.5 0 0 0 9 9.1c10 6.9 21.3 7.4 33.2 7.8 10.8 .4 23 .9 36.9 5.5 5.8 1.9 11.8 5.6 18.7 9.9C194.8 481 217.7 495 256 495s61.3-14.1 78.1-24.4c6.9-4.2 12.9-7.9 18.5-9.8 13.9-4.6 26.2-5.1 36.9-5.5 11.9-.5 23.2-.9 33.2-7.8a34.6 34.6 0 0 0 10.2-11.2c3.4-5.8 3.3-9.9 6.6-12.8a19 19 0 0 1 5.8-2.6A134.9 134.9 0 0 0 476 408.7a48.3 48.3 0 0 0 13-10.2l.1-.1C498.4 388.5 500.7 376.9 496.9 366.6zm-34 18.3c-20.7 11.5-34.5 10.2-45.3 17.1-9.1 5.9-3.7 18.5-10.3 23.1-8.1 5.6-32.2-.4-63.2 9.9-25.6 8.5-42 32.8-88 32.8s-62-24.3-88.1-32.9c-31-10.3-55.1-4.2-63.2-9.9-6.6-4.6-1.2-17.2-10.3-23.1-10.7-6.9-24.5-5.7-45.3-17.1-13.2-7.3-5.7-11.8-1.3-13.9 75.1-36.4 87.1-92.6 87.7-96.7 .6-5 1.4-9-4.2-14.1-5.4-5-29.2-19.7-35.8-24.3-10.9-7.6-15.7-15.3-12.2-24.6 2.5-6.5 8.5-8.9 14.9-8.9a27.6 27.6 0 0 1 6 .7c12 2.6 23.7 8.6 30.4 10.2a10.7 10.7 0 0 0 2.5 .3c3.6 0 4.9-1.8 4.6-5.9-.8-13.1-2.6-38.7-.6-62.6 2.8-32.9 13.4-49.2 26-63.6 6.1-6.9 34.5-37 88.9-37s82.9 29.9 88.9 36.8c12.6 14.4 23.2 30.7 26 63.6 2.1 23.9 .3 49.5-.6 62.6-.3 4.3 1 5.9 4.6 5.9a10.6 10.6 0 0 0 2.5-.3c6.7-1.6 18.4-7.6 30.4-10.2a27.6 27.6 0 0 1 6-.7c6.4 0 12.4 2.5 14.9 8.9 3.5 9.4-1.2 17-12.2 24.6-6.6 4.6-30.4 19.3-35.8 24.3-5.6 5.1-4.8 9.1-4.2 14.1 .5 4.2 12.5 60.4 87.7 96.7C468.6 373 476.1 377.5 462.9 384.9z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="visually-hidden">Snapchat</span>
+                </a>
+
+                <!-- YouTube -->
+                <a
+                  href="https://www.youtube.com/channel/UC_pOwgeaVK7bg3z7fJB5N8w"
+                  class="text-white ms-3"
+                >
+                  <div
+                    class="bg-purple rounded-pill p-2 d-flex justify-content-center align-items-center social-icon"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+
+                <!-- Twitter -->
+                <a
+                  href="https://twitter.com/TuwaiqAcademy"
+                  class="text-white ms-3"
+                >
+                  <div
+                    class="bg-purple rounded-pill p-2 d-flex justify-content-center align-items-center social-icon"
+                  >
+                    <!-- insert the full original Twitter <svg> here -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+
+                <!-- Discord -->
+                <a href="https://discord.gg/DWpUH7wFxj" class="text-white ms-3">
+                  <div
+                    class="bg-purple rounded-pill p-2 d-flex justify-content-center align-items-center social-icon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 21 16"
+                    >
+                      <path
+                        d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="visually-hidden">Discord</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
