@@ -20,5 +20,12 @@
   font-weight: 300;
 }
 .font-light-gray {
-  color: #898989;
+  color: #d6dadf;
+}
+
+.text-12px {
+  font-size: 12px;
+}
+.text-14px {
+  font-size: 14px;
 }
