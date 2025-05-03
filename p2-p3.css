@@ -1,6 +1,24 @@
-.gray-darker{
+
+.ui-sans-serif{
+    font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+.gray-darker {
     background-color: #F0F0F0;
 }
-.logo-size{
+
+.logo-size {
     object-fit: contain;
+}
+.ibm-plex {
+    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+  }
+  
+.lite-brimary{
+background-color: #f3f8ff;
+}
+.font-light {
+    font-weight: 300;
+}
+.font-light-gray{
+    color: #898989;
 }
