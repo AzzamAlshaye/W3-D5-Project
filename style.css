@@ -4,6 +4,8 @@ body {
   width: 100%;
 }
 
+/* navbar section start ----------------*/
+
 /* Navbar backdrop blur */
 .navbar-blur {
   background-color: rgba(255, 255, 255, 0.6) !important; /* fallback */
@@ -71,7 +73,7 @@ body {
   background-color: #4f29b7 !important;
 }
 .light-gray {
-  color: #ff0000;
+  color: #a3a3a3;
 }
 .bg-beige {
   background-color: #e8dfd0 !important;
@@ -79,8 +81,9 @@ body {
 .shadow-offset {
   box-shadow: 5px 5px #4f29b7 !important;
 }
+/* navbar section end ----------------*/
 
-/* page1-hero */
+/* page1-hero start ------------ */
 .min-h-30rem {
   min-height: 30rem;
 }
@@ -128,8 +131,6 @@ body {
 .hover-shadow:hover {
   box-shadow: 8px 8px rgba(0, 0, 0, 0.1) !important;
 }
-/* page1-hero */
-
 /* slideshow */
 /* your custom teal background */
 .bg-custom-teal {
@@ -208,8 +209,9 @@ body {
 .carousel-item {
   transition: transform 0.7s ease;
 }
+/* page1-hero end ------------ */
 
-/* footer */
+/* footer start --------- */
 
 /* base “pill” button */
 .subscribe-btn {
@@ -280,3 +282,4 @@ body {
   width: 20px; /* was ~20px */
   height: 20px; /* was ~20px */
 }
+/* footer end --------- */
