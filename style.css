@@ -1,0 +1,285 @@
+body {
+  font-family: IBM Plex Sans Arabic !important;
+  padding-top: 100px;
+  width: 100%;
+}
+
+/* navbar section start ----------------*/
+
+/* Navbar backdrop blur */
+.navbar-blur {
+  background-color: rgba(255, 255, 255, 0.6) !important; /* fallback */
+  backdrop-filter: blur(10px);
+}
+
+/* Active link pill */
+.navbar .nav-link.active {
+  background-color: #4931af;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+/* Divider between groups */
+.nav-divider {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  height: 2rem;
+  align-items: center;
+}
+/* Language switch pill */
+.lang-pill {
+  background-color: #e3d8ff;
+  color: #4931af !important;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+}
+/* Sign-in button pill */
+.signin-pill {
+  background-color: #4931af;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* make nav-links a bit more padded */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  color: #444;
+}
+/* active “Home” pill */
+.navbar-nav .nav-link.active {
+  background-color: #4931af;
+  color: #fff !important;
+  border-radius: 0.5rem;
+}
+/* language toggle */
+.btn-language {
+  background-color: #fff;
+  color: #6f42c1;
+  border: 1px solid #6f42c1;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+/* offcanvas active item bold */
+.offcanvas-body .nav-link.active {
+  font-weight: bold;
+}
+
+.text-purple {
+  color: #4f29b7 !important;
+}
+
+.bg-purple {
+  background-color: #4f29b7 !important;
+}
+.light-gray {
+  color: #a3a3a3;
+}
+.bg-beige {
+  background-color: #e8dfd0 !important;
+}
+.shadow-offset {
+  box-shadow: 5px 5px #4f29b7 !important;
+}
+/* navbar section end ----------------*/
+
+/* page1-hero start ------------ */
+.min-h-30rem {
+  min-height: 30rem;
+}
+.bg-purple-light {
+  background-color: #e7ddff;
+}
+.bg-teal-light {
+  background-color: #bffffa;
+}
+.bg-pink-light {
+  background-color: #ffdde1;
+}
+.text-purple {
+  color: #4f29b7;
+}
+
+.shadow-offset {
+  box-shadow: 5px 5px #4f29b7;
+}
+
+.rotate-3 {
+  transform: rotate(3deg);
+}
+.rotate-neg-3 {
+  transform: rotate(-3deg);
+}
+.translate-up {
+  transform: translateY(-1rem);
+}
+.card-bootcamps {
+  background-color: #bed9ff;
+}
+.card-programs {
+  background-color: #ffe7ef;
+}
+.card-talks {
+  background-color: #d3ffd5;
+}
+.rounded-3xl {
+  border-radius: 1.5rem !important;
+}
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.1) !important;
+}
+/* slideshow */
+/* your custom teal background */
+.bg-custom-teal {
+  background-color: #57e3d8 !important;
+}
+
+/* marquee animation for the logos */
+.logos-slide {
+  display: flex;
+  overflow: hidden;
+  animation: slide-left 10s linear infinite;
+  :hover {
+    animation: slide-left 0s linear infinite;
+  }
+}
+
+.logos-slide img {
+  height: 20px;
+  margin: 0 0.75rem;
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+/* Badge in top-right of card */
+.badge-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+/* Decorative bar under cards */
+.decor-bar {
+  height: 8px;
+  background-color: rgba(218, 42, 243, 0.2);
+  border-radius: 4px;
+}
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(90deg, #da2af3 0%, #f8587e 100%);
+  color: #fff;
+}
+.btn-gradient:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+/* ensure each card is same height */
+.stats-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* push the image to the bottom of the card */
+.stats-card .img-container {
+  margin-top: auto;
+  text-align: center;
+}
+/* small rounded corners on images */
+.stats-card .img-container img {
+  max-height: 120px;
+  object-fit: contain;
+}
+.news-card {
+  height: 538px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.news-card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.carousel-item {
+  transition: transform 0.7s ease;
+}
+/* page1-hero end ------------ */
+
+/* footer start --------- */
+
+/* base “pill” button */
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* like gap-4 */
+  width: 100%; /* full width in its column */
+  height: 63px; /* md:h-[63px] */
+  font-size: 2rem; /* text-2xl */
+  padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+  border-radius: 1rem; /* rounded-2xl ≈ 1rem */
+  transition: background-color 0.3s;
+  border: none;
+}
+
+/* light theme */
+.subscribe-btn {
+  background-color: #4f29b7;
+  color: #fff;
+}
+.subscribe-btn:hover {
+  background-color: #724fd1;
+}
+
+/* background colours */
+.bg-tuwaiq {
+  background-color: #e3d8ff !important;
+}
+.bg-founding {
+  background-color: #e8dfd0 !important;
+}
+/* text colours */
+.text-tuwaiq {
+  color: #4c4bcf !important;
+}
+.text-founding {
+  color: #684f46 !important;
+}
+/* grayscale filter */
+.grayscale {
+  filter: grayscale(100%);
+}
+/* hr custom border */
+.border-custom {
+  border-color: #ffffff !important;
+}
+/* size for the round icons */
+.social-icon {
+  width: 44px;
+  height: 36px;
+}
+/* hover states for social icons */
+.bg-tuwaiq:hover {
+  background-color: #8869dd !important;
+}
+.bg-founding:hover {
+  background-color: rgba(104, 79, 70, 0.8) !important;
+}
+
+/* make the circle twice as big */
+.social-icon {
+  width: 60px;
+  height: 30px;
+}
+/* make the SVG itself twice as big */
+.social-icon svg {
+  width: 20px; /* was ~20px */
+  height: 20px; /* was ~20px */
+}
+/* footer end --------- */
