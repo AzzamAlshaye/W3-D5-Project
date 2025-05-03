@@ -2,6 +2,9 @@ body {
   padding-top: 100px;
   width: 100%;
 }
+.ibm-plex {
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
 
 /* navbar section start ----------------*/
 
